@@ -1,0 +1,195 @@
+extends ../template
+
+block varibles
+    - var title = "Order"
+
+block content
+
+    .content
+        header.hoadercontent
+            .wrapper
+                .header
+                    .header__left
+                        .header__logo
+                            a(href="./index.html") Профессиональная клиннинговая компания
+                    .header__right
+                        .menu   
+                            .menu__1
+                                a(href="#") услуги
+                            .menu__2
+                                a(href="#") о сервисе
+                            .menu__3
+                                a(href="#") вопросы
+                            .menu__4
+                                a(href="#") личный кабинет
+                        .number
+                            a.number__1(href="tel:8805236565") 8 800 523 65 65
+                            a.number__2(href="#") Заказать обратный звонок
+        
+        section
+            .wrapper
+                .section_one
+                    .section_one__left
+                        .block1#popap
+                            .block1__titlebig
+                                p Оформление заказа
+                            .title
+                                p Как к вам обращаться:
+                            .block1__blockform
+                                .block1__name
+                                    input(type="text" placeholder="Имя")
+                                .block1__surname
+                                    input(type="text" placeholder="Фамилия")
+                                .block1__email
+                                    input(type="email" placeholder="Email")
+                        .block2
+                            .title
+                                p когда к вам приехать:
+                            .block2__blocinput
+                                .block2__day
+                                    input(type="date" value="2018-09-26")
+                                .block2__month
+                                    input(type="time" value="09:00")
+                            .title
+                                p как часто необходимо убирать?
+                            .block2__blockblocks
+                                .block
+                                    p Раз в неделю - 20%
+                                .block
+                                    p Раз в две недели - 10%
+                                .block
+                                    p Один раз
+                        .block3
+                            .title
+                                p Выберите адрес:
+                            .block3__blockinputs
+                                .block3__sity
+                                    input(type="text" placeholder="Город / район")
+                                .block3__street
+                                    input(type="text" placeholder="Улица")
+                                .block3__hous
+                                    input(type="text" placeholder="Дом")
+                                .block3__apartment
+                                    input(type="text" placeholder="Квартира")
+                    .section_one__right
+                        .top
+                            .top__title
+                                p Уборка квартиры с 1 жилой и 1 ванной комнатами
+                            .top__blocktext
+                                .top__text  
+                                    p Дата уборки
+                                    span Ср 26 Сен 09:00
+                                .top__text  
+                                    p Время уборки
+                                    span ~ 4 часа
+                                .top__text  
+                                    p Регулярность
+                                    span Один раз
+                            .top__text.bord  
+                                    p Стоимость первой уборки
+                                    span 499
+                            .top__bottomtext
+                                span К оплате
+                                p 
+                                    | 499
+                                    span грн.
+                                        
+                            .top__link  
+                                a(href="#") У меня есть промокод
+
+                        .bottom
+                            .bottom__title
+                                p Как это работает
+                            .bottom__text
+                                p Клинер приезжает в оговоренное время с полным набором необходимых материалов и химии, Вас просим подготовить только пылесос.
+                            .bottom__title
+                                p Как оплатить
+                            .bottom__text
+                                p Банковской картой, которую можно изменить в Личном Кабинете. Оплата будет списана только после ухода исполнителя.
+
+        section 
+            .wrapper
+                .section_twoo
+                    .title
+                        p Дополнительные опции:
+                    .section_twoo__blockblocks
+                        .section_twoo__blockitem
+                            .section_twoo__img.pos1
+                                img(src="./images/dop1.png", alt="")
+                            .section_twoo__text
+                                p Холодильник
+                        .section_twoo__blockitem
+                            .section_twoo__img.pos1
+                                img(src="./images/dop2.png", alt="")
+                            .section_twoo__text
+                                p Духовка
+                        .section_twoo__blockitem
+                            .section_twoo__img.pos3
+                                img(src="./images/dop3.png", alt="")
+                            .section_twoo__text
+                                p Внутри микроволновки
+                        .section_twoo__blockitem
+                            .section_twoo__img.pos1 
+                                img(src="./images/dop4.png", alt="")
+                            .section_twoo__text
+                                p Вытяжка
+                        .section_twoo__blockitem
+                            .section_twoo__img.pos5  
+                                img(src="./images/dop5.png", alt="")
+                            .section_twoo__text
+                                p Внутри кухонных шкафов
+                        .section_twoo__blockitem
+                            .section_twoo__img.pos1  
+                                img(src="./images/dop6.png", alt="")
+                            .section_twoo__text
+                                p Окна
+                        .section_twoo__blockitem
+                            .section_twoo__img.pos7   
+                                img(src="./images/dop7.png", alt="")
+                            .section_twoo__text
+                                p Балкон
+                        .section_twoo__blockitem
+                            .section_twoo__img.pos1  
+                                img(src="./images/dop8.png", alt="")
+                            .section_twoo__text
+                                p Глажка
+                        .section_twoo__blockitem
+                            .section_twoo__img.pos1  
+                                img(src="./images/dop9.png", alt="")
+                            .section_twoo__text
+                                p Мытье посуды
+                    .section_twoo__radio        
+                        input(type="radio")  
+                        label Уборка после ремонта 
+
+        section
+            .wrapper
+                .section_three
+                    .blockcard
+                        .title
+                            p Информация о карте:
+                        .blockcard__inputblock
+                            input(type="text")
+                            button
+                                span добавить карту
+                        .blockcard__description
+                            .blockcard__descriptionimg
+                                p i
+                            .blockcard__descriptiontext
+                                p За сутки до уборки на Вашем счету будет заблокирована полная стоимость заказа. В этот момент Вы можете получить SMS о том, что сумма списана так как у большинства банков нет специального уведомления о блокировке средств. На самом деле средства списываются только после уборки.
+                    .blockcomment
+                        .title
+                            p коментарий к заказу:
+                        .blockcomment__input
+                            textarea(type="text" placeholder="Ваш комментарий")
+                    .blockbutton
+                        button
+                            span создать Заказ   
+        
+
+
+
+        include ../common/footer.pug
+
+
+        include ../common/popap.pug

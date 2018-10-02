@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+@import "helpers/varibles.scss";
+@import "mixin/pxem.scss";
+@import "common/wrapper.scss";
+@import "components/header.scss";
+@import "components/order.scss";
+@import "components/footer.scss";
+@import "components/title.scss";
+@import "components/popap.scss";
+
+@font-face {
+    font-family: muller; /* Имя шрифта */
+    src: url(../fonts/Fontfabric_MullerRegular.otf); // 400
+    
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: muller; /* Имя шрифта */
+    src: url(../fonts/Fontfabric_MullerBold.otf); // 700
+    
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: muller; /* Имя шрифта */
+    src: url(../fonts/Fontfabric_MullerExtraBold.otf); // 800
+    
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: muller; /* Имя шрифта */
+    src: url(../fonts/Fontfabric_MullerLight.otf); // 300
+    
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: muller; /* Имя шрифта */
+    src: url(../fonts/Fontfabric_MullerMedium.otf); // 500
+    
+    font-weight: 500;
+    font-style: normal;
+}
+
+.content{
+    overflow: hidden;
+}
+
+body{
+    position: relative;
+    font-family: muller;
+    color: $maintext;
+}
+
+a{
+    cursor: pointer;
+}
+
+// a:hover{
+//     transform: scale(1.2, 1.2);
+// }
+
+
+
+

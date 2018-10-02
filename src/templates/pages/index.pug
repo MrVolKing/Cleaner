@@ -1,0 +1,45 @@
+extends ../template
+
+block varibles
+    - var title = "Main"
+
+block content
+   
+    .content
+        header.hoadercontent
+            .wrapper
+                .header
+                    .header__left
+                        .header__logo
+                            a(href="./index.html") Профессиональная клиннинговая компания
+                    .header__right
+                        .menu   
+                            .menu__1
+                                a(href="#") услуги
+                            .menu__2
+                                a(href="#") о сервисе
+                            .menu__3
+                                a(href="#") вопросы
+                            .menu__4
+                                a(href="#") личный кабинет
+                        .number
+                            a.number__1(href="tel:8805236565") 8 800 523 65 65
+                            a.number__2(href="#") Заказать обратный звонок
+
+
+
+
+
+
+        a(href="./order.html") order
+        
+        include ../common/footer.pug
+
+
+        
+        
+
+
+
+
+        

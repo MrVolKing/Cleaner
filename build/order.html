@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Order</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta content="ie-edge" http-equiv="x-ua-compatible">
+    <link rel="stylesheet" href="./styles/app.min.css?1">
+    <script src="./scripts/app.js?1" defer></script><script src="./dist/js/jquery-3.2.1.min.js?1"></script> 
+<script type="text/javascript" src="./dist/js/slick.js"></script>
+<link rel="stylesheet" href="./dist/css/slick.css?1">
+<link rel="stylesheet" href="./dist/css/slick-theme.css?1">
+<script src="./dist/js/swiper.min.js?1"></script>
+<link rel="stylesheet" href="./dist/css/photoswipe.css?1">
+<link rel="stylesheet" href="./dist/css/default-skin.css?1">
+<script src="./dist/js/photoswipe.min.js?1"></script>
+<script src="./dist/js/photoswipe-ui-default.min.js?1"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.js?1"></script>
+<script src="./dist/js/masonry.pkgd.min.js?1"></script>
+<script src="./dist/js/main.js?1"></script> 
+  </head>
+  <body>
+    <div class="content">
+      <header class="hoadercontent">
+        <div class="wrapper">
+          <div class="header">
+            <div class="header__left">
+              <div class="header__logo"><a href="./index.html">Профессиональная клиннинговая компания</a></div>
+            </div>
+            <div class="header__right">
+              <div class="menu">  
+                <div class="menu__1"><a href="#">услуги</a></div>
+                <div class="menu__2"><a href="#">о сервисе</a></div>
+                <div class="menu__3"><a href="#">вопросы</a></div>
+                <div class="menu__4"><a href="#">личный кабинет</a></div>
+              </div>
+              <div class="number"><a class="number__1" href="tel:8805236565">8 800 523 65 65</a><a class="number__2" href="#">Заказать обратный звонок</a></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section>
+        <div class="wrapper">
+          <div class="section_one">
+            <div class="section_one__left">
+              <div class="block1" id="popap">
+                <div class="block1__titlebig">
+                  <p>Оформление заказа</p>
+                </div>
+                <div class="title">
+                  <p>Как к вам обращаться:</p>
+                </div>
+                <div class="block1__blockform">
+                  <div class="block1__name">
+                    <input type="text" placeholder="Имя">
+                  </div>
+                  <div class="block1__surname">
+                    <input type="text" placeholder="Фамилия">
+                  </div>
+                  <div class="block1__email">
+                    <input type="email" placeholder="Email">
+                  </div>
+                </div>
+              </div>
+              <div class="block2">
+                <div class="title">
+                  <p>когда к вам приехать:</p>
+                </div>
+                <div class="block2__blocinput">
+                  <div class="block2__day">
+                    <input type="date" value="2018-09-26">
+                  </div>
+                  <div class="block2__month">
+                    <input type="time" value="09:00">
+                  </div>
+                </div>
+                <div class="title">
+                  <p>как часто необходимо убирать?</p>
+                </div>
+                <div class="block2__blockblocks">
+                  <div class="block">
+                    <p>Раз в неделю - 20%</p>
+                  </div>
+                  <div class="block">
+                    <p>Раз в две недели - 10%</p>
+                  </div>
+                  <div class="block">
+                    <p>Один раз</p>
+                  </div>
+                </div>
+              </div>
+              <div class="block3">
+                <div class="title">
+                  <p>Выберите адрес:</p>
+                </div>
+                <div class="block3__blockinputs">
+                  <div class="block3__sity">
+                    <input type="text" placeholder="Город / район">
+                  </div>
+                  <div class="block3__street">
+                    <input type="text" placeholder="Улица">
+                  </div>
+                  <div class="block3__hous">
+                    <input type="text" placeholder="Дом">
+                  </div>
+                  <div class="block3__apartment">
+                    <input type="text" placeholder="Квартира">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section_one__right">
+              <div class="top">
+                <div class="top__title">
+                  <p>Уборка квартиры с 1 жилой и 1 ванной комнатами</p>
+                </div>
+                <div class="top__blocktext">
+                  <div class="top__text"> 
+                    <p>Дата уборки</p><span>Ср 26 Сен 09:00</span>
+                  </div>
+                  <div class="top__text"> 
+                    <p>Время уборки</p><span>~ 4 часа</span>
+                  </div>
+                  <div class="top__text"> 
+                    <p>Регулярность</p><span>Один раз</span>
+                  </div>
+                </div>
+                <div class="top__text bord"> 
+                  <p>Стоимость первой уборки</p><span>499</span>
+                </div>
+                <div class="top__bottomtext"><span>К оплате</span>
+                  <p>
+                     499<span>грн.</span></p>
+                </div>
+                <div class="top__link"> <a href="#">У меня есть промокод</a></div>
+              </div>
+              <div class="bottom">
+                <div class="bottom__title">
+                  <p>Как это работает</p>
+                </div>
+                <div class="bottom__text">
+                  <p>Клинер приезжает в оговоренное время с полным набором необходимых материалов и химии, Вас просим подготовить только пылесос.</p>
+                </div>
+                <div class="bottom__title">
+                  <p>Как оплатить</p>
+                </div>
+                <div class="bottom__text">
+                  <p>Банковской картой, которую можно изменить в Личном Кабинете. Оплата будет списана только после ухода исполнителя.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section> 
+        <div class="wrapper">
+          <div class="section_twoo">
+            <div class="title">
+              <p>Дополнительные опции:</p>
+            </div>
+            <div class="section_twoo__blockblocks">
+              <div class="section_twoo__blockitem">
+                <div class="section_twoo__img pos1"><img src="./images/dop1.png" alt=""></div>
+                <div class="section_twoo__text">
+                  <p>Холодильник</p>
+                </div>
+              </div>
+              <div class="section_twoo__blockitem">
+                <div class="section_twoo__img pos1"><img src="./images/dop2.png" alt=""></div>
+                <div class="section_twoo__text">
+                  <p>Духовка</p>
+                </div>
+              </div>
+              <div class="section_twoo__blockitem">
+                <div class="section_twoo__img pos3"><img src="./images/dop3.png" alt=""></div>
+                <div class="section_twoo__text">
+                  <p>Внутри микроволновки</p>
+                </div>
+              </div>
+              <div class="section_twoo__blockitem">
+                <div class="section_twoo__img pos1"> <img src="./images/dop4.png" alt=""></div>
+                <div class="section_twoo__text">
+                  <p>Вытяжка</p>
+                </div>
+              </div>
+              <div class="section_twoo__blockitem">
+                <div class="section_twoo__img pos5"> <img src="./images/dop5.png" alt=""></div>
+                <div class="section_twoo__text">
+                  <p>Внутри кухонных шкафов</p>
+                </div>
+              </div>
+              <div class="section_twoo__blockitem">
+                <div class="section_twoo__img pos1"> <img src="./images/dop6.png" alt=""></div>
+                <div class="section_twoo__text">
+                  <p>Окна</p>
+                </div>
+              </div>
+              <div class="section_twoo__blockitem">
+                <div class="section_twoo__img pos7">  <img src="./images/dop7.png" alt=""></div>
+                <div class="section_twoo__text">
+                  <p>Балкон</p>
+                </div>
+              </div>
+              <div class="section_twoo__blockitem">
+                <div class="section_twoo__img pos1"> <img src="./images/dop8.png" alt=""></div>
+                <div class="section_twoo__text">
+                  <p>Глажка</p>
+                </div>
+              </div>
+              <div class="section_twoo__blockitem">
+                <div class="section_twoo__img pos1"> <img src="./images/dop9.png" alt=""></div>
+                <div class="section_twoo__text">
+                  <p>Мытье посуды</p>
+                </div>
+              </div>
+            </div>
+            <div class="section_twoo__radio">       
+              <input type="radio">
+              <label>Уборка после ремонта </label>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="wrapper">
+          <div class="section_three">
+            <div class="blockcard">
+              <div class="title">
+                <p>Информация о карте:</p>
+              </div>
+              <div class="blockcard__inputblock">
+                <input type="text">
+                <button><span>добавить карту</span></button>
+              </div>
+              <div class="blockcard__description">
+                <div class="blockcard__descriptionimg">
+                  <p>i</p>
+                </div>
+                <div class="blockcard__descriptiontext">
+                  <p>За сутки до уборки на Вашем счету будет заблокирована полная стоимость заказа. В этот момент Вы можете получить SMS о том, что сумма списана так как у большинства банков нет специального уведомления о блокировке средств. На самом деле средства списываются только после уборки.</p>
+                </div>
+              </div>
+            </div>
+            <div class="blockcomment">
+              <div class="title">
+                <p>коментарий к заказу:</p>
+              </div>
+              <div class="blockcomment__input">
+                <textarea type="text" placeholder="Ваш комментарий"></textarea>
+              </div>
+            </div>
+            <div class="blockbutton">
+              <button><span>создать Заказ   </span></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footercontent">
+        <div class="wrapper">
+          <div class="footer">
+            <div class="left">
+              <div class="left__messenger">
+                <div><a href="#"><span>Мы в Messenger</span></a></div>
+              </div>
+              <div class="left__telegram">
+                <div><a href="#"><span>Мы в telegram</span></a></div>
+              </div>
+              <div class="left__viber">
+                <div><a href="#"><span>Мы в viber</span></a></div>
+              </div>
+            </div>
+            <div class="center">
+              <div class="center__block"><a href="">карта сайта</a><a href="">о сервисе</a><a href="">услуги</a><a href="">вопросы</a></div>
+              <div class="center__block"><a href="">Работа в нашей компании</a><a href="">Стать клинером</a><a href="">вакансии</a><a href="">личный кабинет</a></div>
+            </div>
+            <div class="right">
+              <div class="right__top"><span>© 2018. Все права защищены</span><a href="tel:88005696536">8 800 569 65 36</a><a href="#">clean@gmail.com</a></div>
+              <div class="right__bottom">
+                <div class="youtube"><a href="#">
+                    <svg width="49" height="49">
+                      <use xlink:href="./images/sprite/sprite.svg#youtube"></use>
+                    </svg></a></div>
+                <div class="facebook"><a href="#">
+                    <svg width="49" height="49">
+                      <use xlink:href="./images/sprite/sprite.svg#facebook"></use>
+                    </svg></a></div>
+                <div class="instagram"><a href="#">
+                    <svg width="49" height="49">
+                      <use xlink:href="./images/sprite/sprite.svg#instagram"></use>
+                    </svg></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="popapwrapblock" id="openmodal">
+        <div class="popap">
+          <div class="popaptop">
+            <div class="popapwrapper">
+              <div class="popap__blocktitle">
+                <div class="popap__titlebig">
+                  <p>Что входит в уборку?</p>
+                </div>
+                <div class="popap__decription"> 
+                  <p>Это наш регламент — то, что мы делаем на каждом заказе. Чтобы настроить уборку под себя, добавьте дополнительные услуги.</p>
+                </div>
+              </div>
+              <div class="block"> 
+                <div class="block__left">
+                  <div class="title"> 
+                    <p>Во всей квартире:</p>
+                  </div>
+                  <div class="paragraph">
+                    <p>Моем пол и протираем плинтусы</p>
+                  </div>
+                  <div class="paragraph">
+                    <p>Пылесосим ковры и коврики</p>
+                  </div>
+                  <div class="paragraph">
+                    <p>Протираем все доступные поверхности</p>
+                  </div>
+                  <div class="paragraph">
+                    <p>Протираем выключатели и дверные ручки</p>
+                  </div>
+                  <div class="paragraph">
+                    <p>Чистим зеркала и стеклянные поверхности</p>
+                  </div>
+                  <div class="paragraph">
+                    <p>Собираем и выносим мусор</p>
+                  </div>
+                </div>
+                <div class="block__right"> 
+                  <div class="titleblock">
+                    <div class="title title_grey">
+                      <p>Дополнить уборку:</p>
+                    </div>
+                  </div>
+                  <div class="blockblocks">
+                    <div class="blockblocks__itemblock">
+                      <div class="blockblocks__img"><img src="./images/windows.png" alt=""></div>
+                      <div class="blockblocks__text">
+                        <p>
+                           Помоем окна <br>50 грн. / окно</p>
+                      </div>
+                    </div>
+                    <div class="blockblocks__itemblock">
+                      <div class="blockblocks__img"><img src="./images/antique-balcony.png" alt=""></div>
+                      <div class="blockblocks__text">
+                        <p>
+                           Приберем балкон <br>120 грн.</p>
+                      </div>
+                    </div>
+                    <div class="blockblocks__itemblock">
+                      <div class="blockblocks__img"><img src="./images/chandelier.png" alt=""></div>
+                      <div class="blockblocks__text">
+                        <p>Помоем люстру<br>120 грн.</p>
+                      </div>
+                    </div>
+                    <div class="blockblocks__itemblock">
+                      <div class="blockblocks__img"><img src="./images/key.png" alt=""></div>
+                      <div class="blockblocks__text">
+                        <p>Заберем ключи<br>75 грн.</p>
+                      </div>
+                    </div>
+                    <div class="blockblocks__itemblock">
+                      <div class="blockblocks__img"><img src="./images/key2.png" alt=""></div>
+                      <div class="blockblocks__text">
+                        <p>Доставим ключи<br>75 грн.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="block"> 
+                <div class="block__left">
+                  <div class="title"> 
+                    <p>На кухне:</p>
+                  </div>
+                  <div class="paragraph">
+                    <p>Моем посуду</p>
+                  </div>
+                  <div class="paragraph">
+                    <p>Моем раковину</p>
+                  </div>
+                  <div class="paragraph">
+                    <p>Протираем столешницу и кухонный фартук</p>
+                  </div>
+                  <div class="paragraph">
+                    <p>Моем снаружи плиту, холодильник и вытяжку</p>
+                  </div>
+                  <div class="paragraph paragraph_mrg">
+                    <p>Протираем фасады шкафов</p>
+                  </div>
+                </div>
+                <div class="block__right"> 
+                  <div class="titleblock">
+                    <div class="title title_grey">
+                      <p>Дополнить уборку:</p>
+                    </div>
+                  </div>
+                  <div class="blockblocks">
+                    <div class="blockblocks__itemblock">
+                      <div class="blockblocks__img"><img src="./images/fridge.png" alt=""></div>
+                      <div class="blockblocks__text">
+                        <p>
+                           Почистим холодильник<br>120 грн.</p>
+                      </div>
+                    </div>
+                    <div class="blockblocks__itemblock">
+                      <div class="blockblocks__img"><img src="./images/oven.png" alt=""></div>
+                      <div class="blockblocks__text">
+                        <p>Помоем духовку<br>75 грн.</p>
+                      </div>
+                    </div>
+                    <div class="blockblocks__itemblock">
+                      <div class="blockblocks__img"><img src="./images/microwave-oven.png" alt=""></div>
+                      <div class="blockblocks__text">
+                        <p>Помоем микроволновку<br>75 грн.</p>
+                      </div>
+                    </div>
+                    <div class="blockblocks__itemblock">
+                      <div class="blockblocks__img"><img src="./images/bathroom-cabinet.png" alt=""></div>
+                      <div class="blockblocks__text">
+                        <p>Приберем кухонные шкафы<br>120 грн.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="block"> 
+                <div class="block__left">
+                  <div class="title"> 
+                    <p>В ванной:</p>
+                  </div>
+                  <div class="paragraph">
+                    <p>Чистим унитаз</p>
+                  </div>
+                  <div class="paragraph paragraph_mrg">
+                    <p>Моем ванну, душевую кабину и раковину</p>
+                  </div>
+                </div>
+                <div class="block__right"> 
+                  <div class="titleblock">
+                    <div class="title title_grey">
+                      <p>Дополнить уборку:</p>
+                    </div>
+                  </div>
+                  <div class="blockblocks">
+                    <div class="blockblocks__itemblock">
+                      <div class="blockblocks__img"><img src="./images/track.png" alt=""></div>
+                      <div class="blockblocks__text">
+                        <p>Помоем лоток питомца <br>50 грн.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="block"> 
+                <div class="block__left">
+                  <div class="title"> 
+                    <p>А что с вещами?:</p>
+                  </div>
+                  <div class="paragraph">
+                    <p>Одежду аккуратно складываем</p>
+                  </div>
+                  <div class="paragraph">
+                    <p>Расставляем обувь</p>
+                  </div>
+                  <div class="paragraph paragraph_mrg">
+                    <p>Меняем постельное бельё и застилаем кровать</p>
+                  </div>
+                </div>
+                <div class="block__right"> 
+                  <div class="titleblock">
+                    <div class="title title_grey">
+                      <p>Дополнить уборку:</p>
+                    </div>
+                  </div>
+                  <div class="blockblocks">
+                    <div class="blockblocks__itemblock">
+                      <div class="blockblocks__img"><img src="./images/iron.png" alt=""></div>
+                      <div class="blockblocks__text">
+                        <p>Погладим вещи <br>120 грн.</p>
+                      </div>
+                    </div>
+                    <div class="blockblocks__itemblock">
+                      <div class="blockblocks__img"><img src="./images/closet.png" alt=""></div>
+                      <div class="blockblocks__text">
+                        <p>Уберёмся в гардеробной <br>120 грн.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="popapmidle">
+            <div class="popapwrapper">
+              <div class="block2"> 
+                <div class="blockimg"><img src="./images/kisspng.png" alt=""></div>
+                <div class="title">
+                  <p>
+                     И всё это от <span>1590 </span>грн.</p>
+                </div>
+                <div class="descriptionlink">
+                  <p> </p>Если у вас возникли вопросы, задайте их нам во <a href="#">Вконтакте</a>,  <a href="#">Фейсбуке</a>, <a href="#">Телеграме </a> или <a href="#">Вайбере </a>!
+                </div>
+                <div class="blockbutton">
+                  <div><a href="#"><span>Заказать уборку</span></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="popapbottom">
+            <div class="popapwrapper">
+              <div class="block3">
+                <div class="block3__title">
+                  <div class="title">
+                    <p>Что мы НЕ делаем на уборке:</p>
+                  </div>
+                </div>
+                <div class="block3__blockblocks">
+                  <div class="block3__left">
+                    <div class="block3__blockitem"> 
+                      <p>Не поднимаем и не двигаем тяжёлые предметы и мебель</p>
+                    </div>
+                    <div class="block3__blockitem"> 
+                      <p>Не делаем химическую чистку ковров</p>
+                    </div>
+                    <div class="block3__blockitem"> 
+                      <p>Не чистим жалюзи и шторы</p>
+                    </div>
+                    <div class="block3__blockitem"> 
+                      <p>Не прибираем в кладовке</p>
+                    </div>
+                    <div class="block3__blockitem"> 
+                      <p>Не моем стены</p>
+                    </div>
+                  </div>
+                  <div class="block3__right">
+                    <div class="block3__blockitem"> 
+                      <p>Не удаляем глубокие пятна и не чистим паром</p>
+                    </div>
+                    <div class="block3__blockitem"> 
+                      <p>Не применяем биологически опасные материалы</p>
+                    </div>
+                    <div class="block3__blockitem"> 
+                      <p>Не работаем во дворах и огородах</p>
+                    </div>
+                    <div class="block3__blockitem"> 
+                      <p>Не делаем уборку в труднодоступных местах</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="popap-close" id="close"><a href="#close" title="close"><img src="./images/closed.png" alt=""></a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
