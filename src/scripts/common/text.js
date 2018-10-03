@@ -9,15 +9,15 @@
     // });
 
 
-    var popap = document.getElementById('popap');
-    var openmodal = document.getElementById('openmodal');
-    var close = document.getElementById('close');
+    // var popap = document.getElementById('popap');
+    // var openmodal = document.getElementById('openmodal');
+    // var close = document.getElementById('close');
 
-    popap.addEventListener('click', function () {
-        openmodal.classList.add('modalDialogActive');
-    });
+    // popap.addEventListener('click', function () {
+    //     openmodal.classList.add('modalDialogActive');
+    // });
 
-    close.addEventListener('click', function () {
-        openmodal.classList.remove('modalDialogActive');
-    });
+    // close.addEventListener('click', function () {
+    //     openmodal.classList.remove('modalDialogActive');
+    // });
 

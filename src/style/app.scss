@@ -8,6 +8,7 @@
 @import "mixin/pxem.scss";
 @import "common/wrapper.scss";
 @import "components/header.scss";
+@import "components/main.scss";
 @import "components/order.scss";
 @import "components/footer.scss";
 @import "components/title.scss";
@@ -55,6 +56,8 @@
 
 .content{
     overflow: hidden;
+    background-color: $white;
+    z-index: 1000;
 }
 
 body{

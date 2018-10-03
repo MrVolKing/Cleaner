@@ -111,6 +111,8 @@
     &__right{
         .top{
             width: 270px;
+            position: fixed;
+            z-index: 1000000000000000;            
             // height: 365px;
             border-radius: 15px;
             background-color: #ebf6ff;
@@ -174,6 +176,7 @@
         }
         .bottom{
             padding-top: 49px;
+            margin-top: 400px;
             &__title{
                 margin-bottom: 18px;
                 p{

@@ -6,7 +6,7 @@ block varibles
 block content
    
     .content
-        header.hoadercontent
+        header.hoadercontent.hoadercontent_blu
             .wrapper
                 .header
                     .header__left
@@ -14,26 +14,446 @@ block content
                             a(href="./index.html") Профессиональная клиннинговая компания
                     .header__right
                         .menu   
-                            .menu__1
+                            .menu__paragraph.menu__paragraph_color
                                 a(href="#") услуги
-                            .menu__2
+                            .menu__paragraph.menu__paragraph_color
                                 a(href="#") о сервисе
-                            .menu__3
+                            .menu__paragraph.menu__paragraph_color
                                 a(href="#") вопросы
-                            .menu__4
+                            .menu__paragraph.menu__paragraph_color
                                 a(href="#") личный кабинет
                         .number
-                            a.number__1(href="tel:8805236565") 8 800 523 65 65
-                            a.number__2(href="#") Заказать обратный звонок
+                            a.number__1.number__1_color(href="tel:8805236565") 8 800 523 65 65
+                            a.number__2.number__2_color(href="#") Заказать обратный звонок
+
+        section.onecontent
+            .wrapper
+                .sectone
+                    .sectone__left
+                        form.form(action="")
+                            .form__title
+                                p Сервис регулярных уборок в Киеве
+                            .form__input
+                                input(type="text")
+                            .form__input
+                                input(type="text")
+                            .form__input
+                                input(type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}")
+                            .form__button
+                                div 
+                                    a(href="./order.html")
+                                        span узнать стоимость
+                                                                                //(type="submit")
+
+                    .sectone__right  
+                        .sectone__righttitle
+                            p Выбрось швабру
+                            p - займись делом
+
+        section
+            .wrapper
+                .secttwoo
+                    .secttwoo__titleblock
+                        .maintitle
+                            p Как это работает?
+                    .secttwoo__blocks   
+                        .blockitem
+                            .blockitem__title
+                                p Оформление заказа
+                            .blockitem__text
+                                p Менеджер перезвонит и подтвердит уборку
+                            .blockitem__icon
+                                img(src="./images/secttwoo1.png", alt="") 
+                        .blockitem
+                            .blockitem__title
+                                p Выполнение уборки
+                            .blockitem__text
+                                p После уборки клинер предоставит чеклист для проверки
+                            .blockitem__icon
+                                img(src="./images/secttwoo2.png", alt="")  
+                        .blockitem
+                            .blockitem__title
+                                p Оплата
+                            .blockitem__text
+                                p Банковской картой после окончания уборки
+                            .blockitem__icon
+                                img(src="./images/secttwoo3.png", alt="")  
+                    
+        section
+            .wrapper
+                .sectthree
+                    .sectthree__title
+                        .maintitle
+                            p Что входит в уборку?  
+                    .sectthree__navbar
+                        .sectthree__navparagraph.activ
+                            span В КОМНАТЕ
+                        .sectthree__navparagraph
+                            span В КОридоре
+                        .sectthree__navparagraph
+                            span В Кухне
+                        .sectthree__navparagraph
+                            span В ванной
+                    .sectthree__blockfoto
+                        //- img(src="./images/sectthree.png", alt="")
+                    .sectthree__blockbutton
+                        div
+                            a(href="#")
+                                span полный список >
+            
+        section.fourcontent
+            .wrapper
+                .sectfour 
+                    .sectfourwrapper 
+                        .sectfour__title
+                            .maintitle.maintitle_color
+                                p Наши преимущества
+                        .sectfour__blocks
+                            .blockitem 
+                                .blockitem__img 
+                                    img(src="./images/sectfour1.png", alt="")
+                                .blockitem__title
+                                    p Удобное время
+                                .blockitem__text
+                                    p Менеджер перезвонит и подтвердит уборку
+                                .blockitem__bg
+                                    p 1
+                            .blockitem 
+                                .blockitem__img 
+                                    img(src="./images/sectfour2.png", alt="")
+                                .blockitem__title.blockitem__title_mrg
+                                    p надежные исполнители
+                                .blockitem__text
+                                    p Менеджер перезвонит и подтвердит уборку
+                                .blockitem__bg
+                                    p 2
+                            .blockitem 
+                                .blockitem__img 
+                                    img(src="./images/sectfour3.png", alt="")
+                                .blockitem__title
+                                    p Система скидок
+                                .blockitem__text
+                                    p Менеджер перезвонит и подтвердит уборку
+                                .blockitem__bg
+                                    p 3
+                            .blockitem 
+                                .blockitem__img 
+                                    img(src="./images/sectfour4.png", alt="")
+                                .blockitem__title.blockitem__title_mrg
+                                    p Страхуем на большую сумму
+                                .blockitem__text
+                                    p Менеджер перезвонит и подтвердит уборку
+                                .blockitem__bg
+                                    p 4
+
+        section.fivecontent
+            .wrapper
+                .sectfive 
+                    .sectfive__title
+                        .maintitle
+                            p Кто убирает?
+                    .sectfive__blocks
+                        .bloc
+                            .blockitem
+                                .blockitem__foto
+                                    img(src="./images/sectfive1.png", alt="")
+                                .blockitem__name
+                                    p Елена
+                                .blockitem__old
+                                    p 30 лет
+                                .blockitem__text    
+                                    p Милая и легкая в общении, исполнительная и старательная в работе. 
+                                .blockitem__star
+                                    img(src="./images/star5.png", alt="")
+                                .blockitem__blockbutton
+                                    div
+                                        a(href="#")
+                                            span отзывы
+                        .bloc
+                            .blockitem
+                                .blockitem__foto
+                                    img(src="./images/sectfive2.png", alt="")
+                                .blockitem__name
+                                    p Богдана
+                                .blockitem__old
+                                    p 35 лет
+                                .blockitem__text    
+                                    p Быстрая, трудолюбивая, стрессоустойчивая. Выполняет уборку шустро, но бережно. 
+                                .blockitem__star
+                                    img(src="./images/star5.png", alt="")
+                                .blockitem__blockbutton
+                                    div
+                                        a(href="#")
+                                            span отзывы
+                        .bloc
+                            .blockitem
+                                .blockitem__foto
+                                    img(src="./images/sectfive3.png", alt="")
+                                .blockitem__name
+                                    p Лариса
+                                .blockitem__old
+                                    p 28 лет
+                                .blockitem__text    
+                                    p Лариса по жизни очень активный и позитивный человек! Всегда с искренней улыбкой.
+                                .blockitem__star
+                                    img(src="./images/star4.png", alt="")
+                                .blockitem__blockbutton
+                                    div
+                                        a(href="#")
+                                            span отзывы
+                        .bloc
+                            .blockitem
+                                .blockitem__foto
+                                    img(src="./images/sectfive4.png", alt="")
+                                .blockitem__name
+                                    p Елена
+                                .blockitem__old
+                                    p 30 лет
+                                .blockitem__text    
+                                    p Милая и легкая в общении, исполнительная и старательная в работе. 
+                                .blockitem__star
+                                    img(src="./images/star5.png", alt="")
+                                .blockitem__blockbutton
+                                    div
+                                        a(href="#")
+                                            span отзывы
+                        .bloc
+                            .blockitem
+                                .blockitem__foto
+                                    img(src="./images/sectfive5.png", alt="")
+                                .blockitem__name
+                                    p Богдана
+                                .blockitem__old
+                                    p 35 лет
+                                .blockitem__text    
+                                    p Быстрая, трудолюбивая, стрессоустойчивая. Выполняет уборку шустро, но бережно. 
+                                .blockitem__star
+                                    img(src="./images/star5.png", alt="")
+                                .blockitem__blockbutton
+                                    div
+                                        a(href="#")
+                                            span отзывы
+                        .bloc
+                            .blockitem
+                                .blockitem__foto
+                                    img(src="./images/sectfive6.png", alt="")
+                                .blockitem__name
+                                    p Лариса
+                                .blockitem__old
+                                    p 28 лет
+                                .blockitem__text    
+                                    p Лариса по жизни очень активный и позитивный человек! Всегда с искренней улыбкой.
+                                .blockitem__star
+                                    img(src="./images/star4.png", alt="")
+                                .blockitem__blockbutton
+                                    div
+                                        a(href="#")
+                                            span отзывы
+
+                    .sectfive__blockbutton
+                        div
+                            a(href="#")
+                                span все клинеры >
+                
+        section.sixcontent
+            .wrapper
+                .six  
+                    .six__title
+                        .maintitle
+                            p Сколько это стоит?  
+                    .six__blocks
+                        .itemblockwrap
+                            .itemblock
+                                .itemblock__title
+                                    p Двухкомнатная
+                                .itemblock__img
+                                    img(src="./images/six.png", alt="")
+                                .itemblock__text
+                                    p Уборка двухкомнатной квартиры с 1 санузлом раз в неделю
+                                .itemblock__price
+                                    p 
+                                        | от 
+                                        span
+                                            | 399 
+                                        | грн
+                                .itemblock__button
+                                    div
+                                        a(href="#")
+                                            span Заказать
+                        .itemblockwrap
+                            .itemblock
+                                .itemblock__title
+                                    p Двухкомнатная
+                                .itemblock__img
+                                    img(src="./images/six.png", alt="")
+                                .itemblock__text
+                                    p Уборка двухкомнатной квартиры с 1 санузлом раз в неделю
+                                .itemblock__price
+                                    p 
+                                        | от 
+                                        span
+                                            | 479 
+                                        | грн
+                                .itemblock__button
+                                    div
+                                        a(href="#")
+                                            span Заказать
+                        .itemblockwrap
+                            .itemblock
+                                .itemblock__title
+                                    p Двухкомнатная
+                                .itemblock__img
+                                    img(src="./images/six.png", alt="")
+                                .itemblock__text
+                                    p Уборка двухкомнатной квартиры с 1 санузлом раз в неделю
+                                .itemblock__price
+                                    p 
+                                        | от 
+                                        span
+                                            | 559 
+                                        | грн
+                                .itemblock__button
+                                    div
+                                        a(href="#")
+                                            span Заказать
+        section.sevencontent
+            .wrapper
+                .review
+                    .review__title
+                        .maintitle
+                            p Отзывы наших клиентов
+                    .review__slider
+                        .swiper-container
+                            .swiper-wrapper 
+                                .swiper-slide
+                                    .slid
+                                        .slid__title
+                                            p татьяна
+                                        .slid__date
+                                            p 03.09.2018
+                                        .slid__text
+                                            p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. 
+                                .swiper-slide
+                                    .slid
+                                        .slid__title
+                                            p татьяна
+                                        .slid__date
+                                            p 03.09.2018
+                                        .slid__text
+                                            p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. 
+                                .swiper-slide
+                                    .slid
+                                        .slid__title
+                                            p татьяна
+                                        .slid__date
+                                            p 03.09.2018
+                                        .slid__text
+                                            p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. 
+                                .swiper-slide
+                                    .slid
+                                        .slid__title
+                                            p татьяна
+                                        .slid__date
+                                            p 03.09.2018
+                                        .slid__text
+                                            p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. 
+                                .swiper-slide
+                                    .slid
+                                        .slid__title
+                                            p татьяна
+                                        .slid__date
+                                            p 03.09.2018
+                                        .slid__text
+                                            p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. 
+                                .swiper-slide
+                                    .slid
+                                        .slid__title
+                                            p татьяна
+                                        .slid__date
+                                            p 03.09.2018
+                                        .slid__text
+                                            p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. 
+
+
+                            .swiper-button-next
+                            .swiper-button-prev
+
+        section.eightcontent
+            .wrapper
+                .faq
+                    .faq__title
+                        .maintitle.maintitle_color
+                            p часто задаваемые вопросы:
+                    .faq__blocks
+                        .itebblock
+                            .itebblock__top#top1
+                                .titlefaq
+                                    p Далеко-далеко за  рыбные тексты?
+                                .arrow
+                                    img(src="./images/arrowdown.png", alt="")
+                            .itebblock__bottom#bottom1
+                                .textfaq
+                                    p Уборка квартиры или дома отнимает у вас много сил и времени? Тогда этот вопрос можно решить вместе с нами. Наши специалисты знают все об идеальной чистоте, используют профессиональный инвентарь, умеют обращаться с бытовой химией, внимательно и аккуратно выполняют свою работу. 
+                        .itebblock
+                            .itebblock__top#top2
+                                .titlefaq
+                                    p Далеко-далеко за  рыбные тексты?
+                                .arrow
+                                    img(src="./images/arrowdown.png", alt="")
+                            .itebblock__bottom#bottom2
+                                .textfaq
+                                    p Уборка квартиры или дома отнимает у вас много сил и времени? Тогда этот вопрос можно решить вместе с нами. Наши специалисты знают все об идеальной чистоте, используют профессиональный инвентарь, умеют обращаться с бытовой химией, внимательно и аккуратно выполняют свою работу. 
+                        .itebblock
+                            .itebblock__top#top3
+                                .titlefaq
+                                    p Далеко-далеко за  рыбные тексты?
+                                .arrow
+                                    img(src="./images/arrowdown.png", alt="")
+                            .itebblock__bottom#bottom3
+                                .textfaq
+                                    p Уборка квартиры или дома отнимает у вас много сил и времени? Тогда этот вопрос можно решить вместе с нами. Наши специалисты знают все об идеальной чистоте, используют профессиональный инвентарь, умеют обращаться с бытовой химией, внимательно и аккуратно выполняют свою работу. 
+                        .itebblock
+                            .itebblock__top#top4
+                                .titlefaq
+                                    p Далеко-далеко за  рыбные тексты?
+                                .arrow
+                                    img(src="./images/arrowdown.png", alt="")
+                            .itebblock__bottom#bottom4
+                                .textfaq
+                                    p Уборка квартиры или дома отнимает у вас много сил и времени? Тогда этот вопрос можно решить вместе с нами. Наши специалисты знают все об идеальной чистоте, используют профессиональный инвентарь, умеют обращаться с бытовой химией, внимательно и аккуратно выполняют свою работу. 
+
+        section.ninecontent
+            .wrapper
+                .formblock
+                    .formblock__title
+                        .maintitle
+                            p Рассчитать стоимость уборки
+                    .formblock__text
+                        p Закажите услуги в сервисе регулярных уборок.
+                    .form__inputblock
+                        form.form
+                            input(type="text")
+                            input(type="text")
+                            input(type="text")
+                            button(type="submit")
+                                span узнать стоимость
+
+
+
+
+                                
 
 
 
 
 
 
-        a(href="./order.html") order
+
+        
+        
         
         include ../common/footer.pug
+        include ../common/popap.pug
 
 
         

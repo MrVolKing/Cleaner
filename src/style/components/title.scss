@@ -12,3 +12,19 @@
         text-transform: uppercase;
     }
 }
+
+
+.maintitle{
+    text-align: center;
+    p{
+        font-size: 40px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $maintext;
+    }
+    &_color{
+        p{
+            color: white;
+        }
+    }
+}
