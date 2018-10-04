@@ -1,3 +1,7 @@
+.onepadding{
+    padding-top: 91px;
+}
+
 .section_one{
     padding: 74px 0 38px 0;
     display: flex;
@@ -56,6 +60,7 @@
                 background-color: #ffffff;
                 padding-left: 15px;
                 outline: none;
+                font-size: 16px;
             }
         }
         &__blockblocks{
@@ -82,6 +87,10 @@
                 background-color: $bordercolor;
                 p {color: $white;
                 }
+            }
+            .activblock{
+                background-color: $bordercolor;
+                color: $white;
             }
         }
     }
@@ -177,6 +186,8 @@
         .bottom{
             padding-top: 49px;
             margin-top: 400px;
+            position: fixed;
+            width: 270px;
             &__title{
                 margin-bottom: 18px;
                 p{
@@ -218,6 +229,9 @@
         // justify-content: center;
         padding: 30px 21px 0 21px;
     }
+    &__blockitem:hover{
+        border: 1px solid $bordercolor;
+    }
     .pos1{
         margin-bottom: 21px;
     }
@@ -242,8 +256,37 @@
     width: 74.5%;
     padding: 37px 0 130px 0;
     .blockcard{
+        .buttoncheck{
+            margin-bottom: 30px;
+            cursor: pointer;
+        }
+        .disp{
+            display: none;
+        }
         border-bottom: 5px solid $bordercolor;
         padding-bottom: 44px;
+        .nal{
+            span{
+                font-size: 26px;
+                font-weight: 800;
+            }
+        }
+        .buttoncheck{
+            display: flex;
+            span{
+                font-size: 20px;
+                font-weight: 700;
+                margin-right: 20px;
+                text-decoration: underline;
+            }
+            .noneactive{
+                text-decoration: none !important;
+                opacity: 0.7;
+
+            }
+            
+        }
+
         &__inputblock{
             display: flex;
             input{

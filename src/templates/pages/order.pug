@@ -5,7 +5,7 @@ block varibles
 
 block content
 
-    .content
+    form.content
         header.hoadercontent
             .wrapper
                 .header
@@ -24,9 +24,9 @@ block content
                                 a(href="#") личный кабинет
                         .number
                             a.number__1(href="tel:8805236565") 8 800 523 65 65
-                            a.number__2(href="#") Заказать обратный звонок
+                            //- a.number__2(href="#") Заказать обратный звонок
         
-        section
+        section.onepadding
             .wrapper
                 .section_one
                     .section_one__left
@@ -37,11 +37,11 @@ block content
                                 p Как к вам обращаться:
                             .block1__blockform
                                 .block1__name
-                                    input(type="text" placeholder="Имя")
+                                    input(type="text" placeholder="Имя*" required)
                                 .block1__surname
-                                    input(type="text" placeholder="Фамилия")
+                                    input(type="text" placeholder="Фамилия*" required)
                                 .block1__email
-                                    input(type="email" placeholder="Email")
+                                    input(type="email" placeholder="Email*" required)
                         .block2
                             .title
                                 p когда к вам приехать:
@@ -53,26 +53,26 @@ block content
                             .title
                                 p как часто необходимо убирать?
                             .block2__blockblocks
-                                .block
+                                .block#block3
                                     p Раз в неделю - 20%
-                                .block
+                                .block#block2
                                     p Раз в две недели - 10%
-                                .block
+                                .block#block1
                                     p Один раз
                         .block3
                             .title
                                 p Выберите адрес:
                             .block3__blockinputs
                                 .block3__sity
-                                    input(type="text" placeholder="Город / район")
+                                    input(type="text" placeholder="Город / район*" required)
                                 .block3__street
-                                    input(type="text" placeholder="Улица")
+                                    input(type="text" placeholder="Улица*" required)
                                 .block3__hous
-                                    input(type="text" placeholder="Дом")
+                                    input(type="text" placeholder="Дом*" required)
                                 .block3__apartment
-                                    input(type="text" placeholder="Квартира")
+                                    input(type="text" placeholder="Квартира*" required)
                     .section_one__right
-                        .top
+                        .top#aside1
                             .top__title
                                 p Уборка квартиры с 1 жилой и 1 ванной комнатами
                             .top__blocktext
@@ -87,6 +87,8 @@ block content
                                     span Один раз
                             .top__text.bord  
                                     p Стоимость первой уборки
+                                    span 499
+                                    p Раз в две недели 
                                     span 499
                             .top__bottomtext
                                 span К оплате
@@ -158,32 +160,40 @@ block content
                                 img(src="./images/dop9.png", alt="")
                             .section_twoo__text
                                 p Мытье посуды
-                    .section_twoo__radio        
-                        input(type="radio")  
-                        label Уборка после ремонта 
+                    //- .section_twoo__radio        
+                    //-     input(type="radio")  
+                    //-     label Уборка после ремонта 
 
         section
             .wrapper
                 .section_three
                     .blockcard
                         .title
-                            p Информация о карте:
-                        .blockcard__inputblock
-                            input(type="text")
-                            button
-                                span добавить карту
-                        .blockcard__description
-                            .blockcard__descriptionimg
-                                p i
-                            .blockcard__descriptiontext
-                                p За сутки до уборки на Вашем счету будет заблокирована полная стоимость заказа. В этот момент Вы можете получить SMS о том, что сумма списана так как у большинства банков нет специального уведомления о блокировке средств. На самом деле средства списываются только после уборки.
+                            p Информация об оплате:
+                        .buttoncheck
+                            .buttoncheck__but1
+                                span#btn1 Оплата картой :
+                            .buttoncheck__but2
+                                span.noneactive#btn2 Оплата наличными :
+                        .card#card
+                            .blockcard__inputblock
+                                input(type="text")
+                                button
+                                    span добавить карту
+                            .blockcard__description
+                                .blockcard__descriptionimg
+                                    p i
+                                .blockcard__descriptiontext
+                                    p За сутки до уборки на Вашем счету будет заблокирована полная стоимость заказа. В этот момент Вы можете получить SMS о том, что сумма списана так как у большинства банков нет специального уведомления о блокировке средств. На самом деле средства списываются только после уборки.
+                        .nal.disp#nal
+                            span Приготовьте сумму к оплате 876 грн.
                     .blockcomment
                         .title
                             p коментарий к заказу:
                         .blockcomment__input
                             textarea(type="text" placeholder="Ваш комментарий")
                     .blockbutton
-                        button
+                        button(tupe="submit")
                             span создать Заказ   
         
 
@@ -193,3 +203,50 @@ block content
 
 
         include ../common/popap.pug
+
+
+        script.
+
+        
+            var btn1 = document.getElementById('btn1');
+            var btn2 = document.getElementById('btn2');
+            var card = document.getElementById('card');
+            var nal = document.getElementById('nal');
+            var block1 = document.getElementById('block1');
+            var block2 = document.getElementById('block2');
+            var block3 = document.getElementById('block3');
+
+            btn1.addEventListener('click', function () {
+                btn2.classList.add('noneactive');
+                btn1.classList.remove('noneactive');
+                nal.classList.add('disp');
+                card.classList.remove('disp');
+            });
+
+
+            btn2.addEventListener('click', function () {
+                btn1.classList.add('noneactive');
+                btn2.classList.remove('noneactive');
+                nal.classList.remove('disp');
+                card.classList.add('disp');
+            });
+
+            block1.addEventListener('click', function () {
+                block1.classList.add('activblock');
+                block2.classList.remove('activblock');
+                block3.classList.remove('activblock');
+            });
+
+            block2.addEventListener('click', function () {
+                block2.classList.add('activblock');
+                block1.classList.remove('activblock');
+                block3.classList.remove('activblock');
+                
+            });
+
+            block3.addEventListener('click', function () {
+                block3.classList.add('activblock');
+                block2.classList.remove('activblock');
+                block1.classList.remove('activblock');
+                
+            });

@@ -10,7 +10,7 @@ require('./common/photoswipe');
 
 
 
-// require('./common/masonry.pkgd.min');
+require('./common/jquery.maskedinput');
 // require('./common/masonrycustom');
 
 

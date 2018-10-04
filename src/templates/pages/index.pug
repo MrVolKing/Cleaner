@@ -24,25 +24,36 @@ block content
                                 a(href="#") личный кабинет
                         .number
                             a.number__1.number__1_color(href="tel:8805236565") 8 800 523 65 65
-                            a.number__2.number__2_color(href="#") Заказать обратный звонок
+                            //- a.number__2.number__2_color(href="#") Заказать обратный звонок
 
         section.onecontent
             .wrapper
                 .sectone
                     .sectone__left
-                        form.form(action="")
+                        form.form(form action="./order.html" method="get")
                             .form__title
                                 p Сервис регулярных уборок в Киеве
-                            .form__input
-                                input(type="text")
-                            .form__input
-                                input(type="text")
-                            .form__input
-                                input(type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}")
+                            .form__input.calc
+                                .calc__quantity-block.quantity-block
+                                    button.calc__quantity-arrow-plus.quantity-arrow-plus(type="button")
+                                        span +
+                                    input.calc__quantity-num.quantity-num(type='text', value='1 - комната' readonly="readonly" )
+                                    button.quantity-arrow-minus.arrow-minus(type="button")
+                                        span -
+                            .form__input.calc
+                                .calc__quantity-block.quantity-block
+                                    button.calc__quantity-arrow-plus.quantity-arrow-plus2(type="button")
+                                        span +
+                                    input.calc__quantity-num.quantity-num2(type='text', value='1 - санузел' readonly="readonly")
+                                    button.quantity-arrow-minus2.arrow-minus(type="button")
+                                        span -
+                            .form__input.phone
+                                input.inputphonesfontsize#phone(type="tel"  placeholder='(ХХХ) 222-22-22')
+                                div
+                                    span +38
                             .form__button
-                                div 
-                                    a(href="./order.html")
-                                        span узнать стоимость
+                                button(href="./order.html")
+                                    span узнать стоимость
                                                                                 //(type="submit")
 
                     .sectone__right  
@@ -97,9 +108,8 @@ block content
                     .sectthree__blockfoto
                         //- img(src="./images/sectthree.png", alt="")
                     .sectthree__blockbutton
-                        div
-                            a(href="#")
-                                span полный список >
+                        div#requrepopap
+                            span полный список >
             
         section.fourcontent
             .wrapper
@@ -431,11 +441,24 @@ block content
                     .formblock__text
                         p Закажите услуги в сервисе регулярных уборок.
                     .form__inputblock
-                        form.form
-                            input(type="text")
-                            input(type="text")
-                            input(type="text")
-                            button(type="submit")
+                        form.form.calc(form action="./order.html" method="get")
+                            .calc__quantity-block.quantity-block
+                                button.calc__quantity-arrow-plus.quantity-arrow-plus.wdht(type="button")
+                                    span +
+                                input.calc__quantity-num.quantity-num(type='text', value='1 - комната' readonly="readonly" )
+                                button.quantity-arrow-minus.arrow-minus.wdht(type="button")
+                                    span -
+                            .calc__quantity-block.quantity-block
+                                button.calc__quantity-arrow-plus.quantity-arrow-plus2.wdht(type="button")
+                                    span +
+                                input.calc__quantity-num.quantity-num2(type='text', value='1 - санузел' readonly="readonly")
+                                button.quantity-arrow-minus2.arrow-minus.wdht(type="button")
+                                    span -
+                            .form__input.phone
+                                input.inputphonesfontsize#phone2(type="tel" placeholder='(ХХХ) 222-22-22')
+                                div.wdht
+                                    span +38
+                            button.buttonform(type="submit")
                                 span узнать стоимость
 
 

@@ -7,23 +7,23 @@
     <meta content="" name="keywords">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta content="ie-edge" http-equiv="x-ua-compatible">
-    <link rel="stylesheet" href="./styles/app.min.css?1">
-    <script src="./scripts/app.js?1" defer></script><script src="./dist/js/jquery-3.2.1.min.js?1"></script> 
-<script type="text/javascript" src="./dist/js/slick.js"></script>
-<link rel="stylesheet" href="./dist/css/slick.css?1">
-<link rel="stylesheet" href="./dist/css/slick-theme.css?1">
-<link rel="stylesheet" href="./dist/css/swiper.css?1">
-<script src="./dist/js/swiper.min.js?1"></script>
-<link rel="stylesheet" href="./dist/css/photoswipe.css?1">
-<link rel="stylesheet" href="./dist/css/default-skin.css?1">
-<script src="./dist/js/photoswipe.min.js?1"></script>
-<script src="./dist/js/photoswipe-ui-default.min.js?1"></script> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.js?1"></script>
-<script src="./dist/js/masonry.pkgd.min.js?1"></script>
-<script src="./dist/js/main.js?1"></script> 
+    <link rel="stylesheet" href="./styles/app.min.css?2">
+    <script src="./scripts/app.js?2" defer></script><script src="./dist/js/jquery-3.2.1.min.js?2"></script> 
+<script type="text/javascript" src="./dist/js/slick.js?2"></script>
+<link rel="stylesheet" href="./dist/css/slick.css?2">
+<link rel="stylesheet" href="./dist/css/slick-theme.css?2">
+<link rel="stylesheet" href="./dist/css/swiper.css?2">
+<script src="./dist/js/swiper.min.js?2"></script>
+<link rel="stylesheet" href="./dist/css/photoswipe.css?2">
+<link rel="stylesheet" href="./dist/css/default-skin.css?2">
+<script src="./dist/js/photoswipe.min.js?2"></script>
+<script src="./dist/js/photoswipe-ui-default.min.js?2"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.js?2"></script>
+<script src="./dist/js/masonry.pkgd.min.js?2"></script>
+<script src="./dist/js/main.js?2"></script> 
   </head>
   <body>
-    <div class="content">
+    <form class="content">
       <header class="hoadercontent">
         <div class="wrapper">
           <div class="header">
@@ -37,12 +37,12 @@
                 <div class="menu__paragraph"><a href="#">вопросы</a></div>
                 <div class="menu__paragraph"><a href="#">личный кабинет</a></div>
               </div>
-              <div class="number"><a class="number__1" href="tel:8805236565">8 800 523 65 65</a><a class="number__2" href="#">Заказать обратный звонок</a></div>
+              <div class="number"><a class="number__1" href="tel:8805236565">8 800 523 65 65</a></div>
             </div>
           </div>
         </div>
       </header>
-      <section>
+      <section class="onepadding">
         <div class="wrapper">
           <div class="section_one">
             <div class="section_one__left">
@@ -55,13 +55,13 @@
                 </div>
                 <div class="block1__blockform">
                   <div class="block1__name">
-                    <input type="text" placeholder="Имя">
+                    <input type="text" placeholder="Имя*" required>
                   </div>
                   <div class="block1__surname">
-                    <input type="text" placeholder="Фамилия">
+                    <input type="text" placeholder="Фамилия*" required>
                   </div>
                   <div class="block1__email">
-                    <input type="email" placeholder="Email">
+                    <input type="email" placeholder="Email*" required>
                   </div>
                 </div>
               </div>
@@ -81,13 +81,13 @@
                   <p>как часто необходимо убирать?</p>
                 </div>
                 <div class="block2__blockblocks">
-                  <div class="block">
+                  <div class="block" id="block3">
                     <p>Раз в неделю - 20%</p>
                   </div>
-                  <div class="block">
+                  <div class="block" id="block2">
                     <p>Раз в две недели - 10%</p>
                   </div>
-                  <div class="block">
+                  <div class="block" id="block1">
                     <p>Один раз</p>
                   </div>
                 </div>
@@ -98,22 +98,22 @@
                 </div>
                 <div class="block3__blockinputs">
                   <div class="block3__sity">
-                    <input type="text" placeholder="Город / район">
+                    <input type="text" placeholder="Город / район*" required>
                   </div>
                   <div class="block3__street">
-                    <input type="text" placeholder="Улица">
+                    <input type="text" placeholder="Улица*" required>
                   </div>
                   <div class="block3__hous">
-                    <input type="text" placeholder="Дом">
+                    <input type="text" placeholder="Дом*" required>
                   </div>
                   <div class="block3__apartment">
-                    <input type="text" placeholder="Квартира">
+                    <input type="text" placeholder="Квартира*" required>
                   </div>
                 </div>
               </div>
             </div>
             <div class="section_one__right">
-              <div class="top">
+              <div class="top" id="aside1">
                 <div class="top__title">
                   <p>Уборка квартиры с 1 жилой и 1 ванной комнатами</p>
                 </div>
@@ -130,6 +130,7 @@
                 </div>
                 <div class="top__text bord"> 
                   <p>Стоимость первой уборки</p><span>499</span>
+                  <p>Раз в две недели </p><span>499</span>
                 </div>
                 <div class="top__bottomtext"><span>К оплате</span>
                   <p>
@@ -217,10 +218,6 @@
                 </div>
               </div>
             </div>
-            <div class="section_twoo__radio">       
-              <input type="radio">
-              <label>Уборка после ремонта </label>
-            </div>
           </div>
         </div>
       </section>
@@ -229,20 +226,27 @@
           <div class="section_three">
             <div class="blockcard">
               <div class="title">
-                <p>Информация о карте:</p>
+                <p>Информация об оплате:</p>
               </div>
-              <div class="blockcard__inputblock">
-                <input type="text">
-                <button><span>добавить карту</span></button>
+              <div class="buttoncheck">
+                <div class="buttoncheck__but1"><span id="btn1">Оплата картой :</span></div>
+                <div class="buttoncheck__but2"><span class="noneactive" id="btn2">Оплата наличными :</span></div>
               </div>
-              <div class="blockcard__description">
-                <div class="blockcard__descriptionimg">
-                  <p>i</p>
+              <div class="card" id="card">
+                <div class="blockcard__inputblock">
+                  <input type="text">
+                  <button><span>добавить карту</span></button>
                 </div>
-                <div class="blockcard__descriptiontext">
-                  <p>За сутки до уборки на Вашем счету будет заблокирована полная стоимость заказа. В этот момент Вы можете получить SMS о том, что сумма списана так как у большинства банков нет специального уведомления о блокировке средств. На самом деле средства списываются только после уборки.</p>
+                <div class="blockcard__description">
+                  <div class="blockcard__descriptionimg">
+                    <p>i</p>
+                  </div>
+                  <div class="blockcard__descriptiontext">
+                    <p>За сутки до уборки на Вашем счету будет заблокирована полная стоимость заказа. В этот момент Вы можете получить SMS о том, что сумма списана так как у большинства банков нет специального уведомления о блокировке средств. На самом деле средства списываются только после уборки.</p>
+                  </div>
                 </div>
               </div>
+              <div class="nal disp" id="nal"><span>Приготовьте сумму к оплате 876 грн.</span></div>
             </div>
             <div class="blockcomment">
               <div class="title">
@@ -253,12 +257,12 @@
               </div>
             </div>
             <div class="blockbutton">
-              <button><span>создать Заказ   </span></button>
+              <button tupe="submit"><span>создать Заказ   </span></button>
             </div>
           </div>
         </div>
       </section>
-      <footer class="footercontent">
+      <footer class="footercontent" id="footer">
         <div class="wrapper">
           <div class="footer">
             <div class="left">
@@ -561,6 +565,50 @@
           <div class="popap-close" id="close"><a href="#close" title="close"><img src="./images/closed.png" alt=""></a></div>
         </div>
       </div>
-    </div>
+      <script>
+        var btn1 = document.getElementById('btn1');
+        var btn2 = document.getElementById('btn2');
+        var card = document.getElementById('card');
+        var nal = document.getElementById('nal');
+        var block1 = document.getElementById('block1');
+        var block2 = document.getElementById('block2');
+        var block3 = document.getElementById('block3');
+        
+        btn1.addEventListener('click', function () {
+            btn2.classList.add('noneactive');
+            btn1.classList.remove('noneactive');
+            nal.classList.add('disp');
+            card.classList.remove('disp');
+        });
+        
+        
+        btn2.addEventListener('click', function () {
+            btn1.classList.add('noneactive');
+            btn2.classList.remove('noneactive');
+            nal.classList.remove('disp');
+            card.classList.add('disp');
+        });
+        
+        block1.addEventListener('click', function () {
+            block1.classList.add('activblock');
+            block2.classList.remove('activblock');
+            block3.classList.remove('activblock');
+        });
+        
+        block2.addEventListener('click', function () {
+            block2.classList.add('activblock');
+            block1.classList.remove('activblock');
+            block3.classList.remove('activblock');
+            
+        });
+        
+        block3.addEventListener('click', function () {
+            block3.classList.add('activblock');
+            block2.classList.remove('activblock');
+            block1.classList.remove('activblock');
+            
+        });
+      </script>
+    </form>
   </body>
 </html>
