@@ -53,12 +53,24 @@ block content
                             .title
                                 p как часто необходимо убирать?
                             .block2__blockblocks
-                                .block#block3
-                                    p Раз в неделю - 20%
-                                .block#block2
-                                    p Раз в две недели - 10%
-                                .block#block1
-                                    p Один раз
+                                //- .block#block3
+                                //-     p Раз в неделю - 20%
+                                //- .block#block2
+                                //-     p Раз в две недели - 10%
+                                //- .block#block1
+                                //-     p Один раз
+                                label
+                                    input(type="radio" name="freq" value='0.8' class="freq" data-text="Раз в неделю" data-discount="20%" data-bold="fdfdf") 
+                                    .block#block3
+                                        p Раз в неделю - 20%
+                                label
+                                    input(type="radio" name="freq" value='0.9' class="freq" data-text="Раз в две недели" data-discount="10%" data-bold="dfdfdf")
+                                    .block#block2
+                                        p Раз в две недели - 10%
+                                label
+                                    input(type="radio" name="freq" value='1' class="freq" data-text="Один раз" data-bold="sdsdsds" checked)
+                                    .block#block1
+                                        p Один раз
                         .block3
                             .title
                                 p Выберите адрес:
@@ -76,25 +88,30 @@ block content
                             .top__title
                                 p Уборка квартиры с 1 жилой и 1 ванной комнатами
                             .top__blocktext
+                                .top__text 
+                                    .bl 
+                                        p Дата уборки
+                                        span Ср 26 Сен 09:00
                                 .top__text  
-                                    p Дата уборки
-                                    span Ср 26 Сен 09:00
-                                .top__text  
-                                    p Время уборки
-                                    span ~ 4 часа
-                                .top__text  
-                                    p Регулярность
-                                    span Один раз
-                            .top__text.bord  
+                                    .bl
+                                        p Время уборки
+                                        span ~ 4 часа
+                                .top__text 
+                                    .bl 
+                                        p Регулярность
+                                        span#regulirity 
+                            .top__text.bord 
+                                .bl 
                                     p Стоимость первой уборки
-                                    span 499
-                                    p Раз в две недели 
-                                    span 499
+                                    span#global_sum_result
+                                .bl
+                                    p#regulirity2
+                                    span#discount
                             .top__bottomtext
                                 span К оплате
-                                p 
-                                    | 499
-                                    span грн.
+                                p#global_sum_result2
+                                    //- | 499
+                                    //- span грн.
                                         
                             .top__link  
                                 a(href="#") У меня есть промокод
@@ -115,54 +132,114 @@ block content
                     .title
                         p Дополнительные опции:
                     .section_twoo__blockblocks
-                        .section_twoo__blockitem
-                            .section_twoo__img.pos1
-                                img(src="./images/dop1.png", alt="")
-                            .section_twoo__text
-                                p Холодильник
-                        .section_twoo__blockitem
-                            .section_twoo__img.pos1
-                                img(src="./images/dop2.png", alt="")
-                            .section_twoo__text
-                                p Духовка
-                        .section_twoo__blockitem
-                            .section_twoo__img.pos3
-                                img(src="./images/dop3.png", alt="")
-                            .section_twoo__text
-                                p Внутри микроволновки
-                        .section_twoo__blockitem
-                            .section_twoo__img.pos1 
-                                img(src="./images/dop4.png", alt="")
-                            .section_twoo__text
-                                p Вытяжка
-                        .section_twoo__blockitem
-                            .section_twoo__img.pos5  
-                                img(src="./images/dop5.png", alt="")
-                            .section_twoo__text
-                                p Внутри кухонных шкафов
-                        .section_twoo__blockitem
-                            .section_twoo__img.pos1  
-                                img(src="./images/dop6.png", alt="")
-                            .section_twoo__text
-                                p Окна
-                        .section_twoo__blockitem
-                            .section_twoo__img.pos7   
-                                img(src="./images/dop7.png", alt="")
-                            .section_twoo__text
-                                p Балкон
-                        .section_twoo__blockitem
-                            .section_twoo__img.pos1  
-                                img(src="./images/dop8.png", alt="")
-                            .section_twoo__text
-                                p Глажка
-                        .section_twoo__blockitem
-                            .section_twoo__img.pos1  
-                                img(src="./images/dop9.png", alt="")
-                            .section_twoo__text
-                                p Мытье посуды
-                    //- .section_twoo__radio        
-                    //-     input(type="radio")  
-                    //-     label Уборка после ремонта 
+                        //- .section_twoo__blockitem
+                        //-     .section_twoo__img.pos1
+                        //-         img(src="./images/dop1.png", alt="")
+                        //-     .section_twoo__text
+                        //-         p Холодильник
+                        //- .section_twoo__blockitem
+                        //-     .section_twoo__img.pos1
+                        //-         img(src="./images/dop2.png", alt="")
+                        //-     .section_twoo__text
+                        //-         p Духовка
+                        //- .section_twoo__blockitem
+                        //-     .section_twoo__img.pos3
+                        //-         img(src="./images/dop3.png", alt="")
+                        //-     .section_twoo__text
+                        //-         p Внутри микроволновки
+                        //- .section_twoo__blockitem
+                        //-     .section_twoo__img.pos1 
+                        //-         img(src="./images/dop4.png", alt="")
+                        //-     .section_twoo__text
+                        //-         p Вытяжка
+                        //- .section_twoo__blockitem
+                        //-     .section_twoo__img.pos5  
+                        //-         img(src="./images/dop5.png", alt="")
+                        //-     .section_twoo__text
+                        //-         p Внутри кухонных шкафов
+                        //- .section_twoo__blockitem
+                        //-     .section_twoo__img.pos1  
+                        //-         img(src="./images/dop6.png", alt="")
+                        //-     .section_twoo__text
+                        //-         p Окна
+                        //- .section_twoo__blockitem
+                        //-     .section_twoo__img.pos7   
+                        //-         img(src="./images/dop7.png", alt="")
+                        //-     .section_twoo__text
+                        //-         p Балкон
+                        //- .section_twoo__blockitem
+                        //-     .section_twoo__img.pos1  
+                        //-         img(src="./images/dop8.png", alt="")
+                        //-     .section_twoo__text
+                        //-         p Глажка
+                        //- .section_twoo__blockitem
+                        //-     .section_twoo__img.pos1  
+                        //-         img(src="./images/dop9.png", alt="")
+                        //-     .section_twoo__text
+                        //-         p Мытье посуды
+                        label
+                            input(type="checkbox" value='100' class="dishes" data-time="5")
+                            .section_twoo__blockitem#check1
+                                .section_twoo__img.pos1
+                                    img(src="./images/dop1.png", alt="")
+                                .section_twoo__text
+                                    p Холодильник
+                        label
+                            input(type="checkbox" value='100' class="dishes")
+                            .section_twoo__blockitem#check2
+                                .section_twoo__img.pos1
+                                    img(src="./images/dop2.png", alt="")
+                                .section_twoo__text
+                                    p Духовка
+                        label
+                            input(type="checkbox" value='100' class="dishes")
+                            .section_twoo__blockitem#check3
+                                .section_twoo__img.pos3
+                                    img(src="./images/dop3.png", alt="")
+                                .section_twoo__text
+                                    p Внутри микроволновки
+                        label
+                            input(type="checkbox" value='100' class="dishes" data-time="5")
+                            .section_twoo__blockitem#check4
+                                .section_twoo__img.pos1 
+                                    img(src="./images/dop4.png", alt="")
+                                .section_twoo__text
+                                    p Вытяжка
+                        label
+                            input(type="checkbox" value='100' class="dishes")
+                            .section_twoo__blockitem#check5
+                                .section_twoo__img.pos5  
+                                    img(src="./images/dop5.png", alt="")
+                                .section_twoo__text
+                                    p Внутри кухонных шкафов
+                        label
+                            input(type="checkbox" value='100' class="dishes")
+                            .section_twoo__blockitem#check6
+                                .section_twoo__img.pos1  
+                                    img(src="./images/dop6.png", alt="")
+                                .section_twoo__text
+                                    p Окна
+                        label
+                            input(type="checkbox" value='100' class="dishes" data-time="5")
+                            .section_twoo__blockitem#check7
+                                .section_twoo__img.pos7   
+                                    img(src="./images/dop7.png", alt="")
+                                .section_twoo__text
+                                    p Балкон
+                        label
+                            input(type="checkbox" value='100' class="dishes")
+                            .section_twoo__blockitem#check8
+                                .section_twoo__img.pos1  
+                                    img(src="./images/dop8.png", alt="")
+                                .section_twoo__text
+                                    p Глажка
+                        label
+                            input(type="checkbox" value='100' class="dishes")
+                            .section_twoo__blockitem#check9
+                                .section_twoo__img.pos1  
+                                    img(src="./images/dop9.png", alt="")
+                                .section_twoo__text
+                                    p Мытье посуды
 
         section
             .wrapper
@@ -178,7 +255,7 @@ block content
                         .card#card
                             .blockcard__inputblock
                                 input(type="text")
-                                button
+                                button.btnhover
                                     span добавить карту
                             .blockcard__description
                                 .blockcard__descriptionimg
@@ -193,7 +270,7 @@ block content
                         .blockcomment__input
                             textarea(type="text" placeholder="Ваш комментарий")
                     .blockbutton
-                        button(tupe="submit")
+                        button.btnhover(tupe="submit")
                             span создать Заказ   
         
 
@@ -205,9 +282,84 @@ block content
         include ../common/popap.pug
 
 
-        script.
+    script.
+        $(document).ready(() => {
 
-        
+            let global_result = window.localStorage.getItem('global_result') || 0; //undefined
+            let weeks_rez = 1;
+            let dishes_rez = 0;
+            let freq_text = 'Один раз';
+            let discount = '';
+            let bold = '';
+
+            const $count_rooms_el = $('#count_rooms');
+            const $count_suns_el = $('#count_suns');
+
+            const btn_step1 = $('#btn_step1');
+
+            function recount(argument) {
+                $('#global_sum_result').html(global_result * weeks_rez + dishes_rez);
+                $('#global_sum_result2').html(global_result * weeks_rez + dishes_rez);
+                $('#regulirity').html(freq_text);
+                $('#regulirity2').html(freq_text);
+                $('#bold').html(bold);
+                if (discount) {
+                    $('#discount').show();
+                    $('#discount').html(discount);
+                }
+                else {
+                    $('#discount').hide();
+                }
+            }
+            recount();
+
+
+            btn_step1.on('click', () => {
+                const count_rooms_el_val = $count_rooms_el.val();
+                const count_suns_el_val = $count_suns_el.val();
+                global_result = +count_rooms_el_val + +count_suns_el_val;
+                if(global_result === 2) {
+                    window.localStorage.setItem('global_result', global_result + 478);
+                }
+                else if(global_result === 3) {
+                    window.localStorage.setItem('global_result', global_result + 597);
+                }
+                else if(global_result === 4) {
+                    window.localStorage.setItem('global_result', global_result + 716);
+                }
+
+                else{
+                    window.localStorage.setItem('global_result', 770);
+                }
+                
+
+                window.location.assign('./order.html');
+            });
+
+
+            $('.freq').on('click', () => {
+                const $checkedRadio = $(".freq:checked");
+                weeks_rez = $checkedRadio.val();
+                freq_text = $checkedRadio.attr('data-text');
+                discount = $checkedRadio.attr('data-discount');
+                bold = $checkedRadio.attr('data-bold');
+            
+
+                recount();
+            });
+
+            $('.dishes').on('click', () => {
+                const dishes = $(".dishes:checked");
+                dishes_rez = 0;
+
+                for (var i = 0; i < dishes.length; i++) {
+                    dishes_rez += +$(dishes[i]).val();
+                }
+
+                recount();
+            });
+        });
+
             var btn1 = document.getElementById('btn1');
             var btn2 = document.getElementById('btn2');
             var card = document.getElementById('card');
@@ -249,4 +401,51 @@ block content
                 block2.classList.remove('activblock');
                 block1.classList.remove('activblock');
                 
+            });
+
+
+            var check1 = document.getElementById('check1');
+            var check2 = document.getElementById('check2');
+            var check3 = document.getElementById('check3');
+            var check4 = document.getElementById('check4');
+            var check5 = document.getElementById('check5');
+            var check6 = document.getElementById('check6');
+            var check7 = document.getElementById('check7');
+            var check8 = document.getElementById('check8');
+            var check9 = document.getElementById('check9');
+
+             check1.addEventListener('click', function () {
+                check1.classList.toggle('checkactive');
+            });
+
+            check2.addEventListener('click', function () {
+                check2.classList.toggle('checkactive');
+            });
+
+            check3.addEventListener('click', function () {
+                check3.classList.toggle('checkactive');
+            });
+
+            check4.addEventListener('click', function () {
+                check4.classList.toggle('checkactive');
+            });
+
+            check5.addEventListener('click', function () {
+                check5.classList.toggle('checkactive');
+            });
+
+            check6.addEventListener('click', function () {
+                check6.classList.toggle('checkactive');
+            });
+
+            check7.addEventListener('click', function () {
+                check7.classList.toggle('checkactive');
+            });
+
+            check8.addEventListener('click', function () {
+                check8.classList.toggle('checkactive');
+            });
+
+            check9.addEventListener('click', function () {
+                check9.classList.toggle('checkactive');
             });

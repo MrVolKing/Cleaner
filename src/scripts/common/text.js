@@ -38,7 +38,7 @@
       
               let val = parseInt($quantityNum.val().split(" ")[0])-1;
       
-              $quantityNum.val(val + " - комната");
+              $quantityNum.val(val);
               console.log( $quantityNum.val)
               return;
       
@@ -53,7 +53,7 @@
       
               let val = parseInt($quantityNum.val().split(" ")[0])+1;
       
-              $quantityNum.val(val + " - комната");
+              $quantityNum.val(val);
               return;
       
       
@@ -84,7 +84,7 @@
         
                 let val = parseInt($quantityNum2.val().split(" ")[0])-1;
         
-                $quantityNum2.val(val + " - санузел");
+                $quantityNum2.val(val);
                 console.log( $quantityNum2.val)
                 return;
         
@@ -99,7 +99,7 @@
         
                 let val = parseInt($quantityNum2.val().split(" ")[0])+1;
         
-                $quantityNum2.val(val + " - санузел");
+                $quantityNum2.val(val);
                 return;
         
         
@@ -114,6 +114,90 @@
 
 
                         // calc
+
+
+    // $(document).ready(() => {
+
+    //     let global_result = window.localStorage.getItem('global_result') || 0; //undefined
+    //     let weeks_rez = 1;
+    //     let dishes_rez = 0;
+    //     let freq_text = 'Один раз';
+    //     let discount = '';
+    
+    //     const $count_rooms_el = $('#count_rooms');
+    //     const $count_suns_el = $('#count_suns');
+    
+    //     const btn_step1 = $('#btn_step1');
+    
+    //     function recount(argument) {
+    //         $('#global_sum_result').html(global_result * weeks_rez + dishes_rez);
+    //         $('#regulirity').html(freq_text);
+    //         if (discount) {
+    //             $('#discount').show();
+    //             $('#discount').html(discount);
+    //         }
+    //         else {
+    //             $('#discount').hide();
+    //         }
+    //     }
+    //     recount();
+    
+    
+    //     btn_step1.on('click', () => {
+    //         const count_rooms_el_val = $count_rooms_el.val();
+    //         const count_suns_el_val = $count_suns_el.val();
+    //         global_result = +count_rooms_el_val + +count_suns_el_val;
+    //         console.log('global_result', global_result);
+    //         if(global_result === 2) {
+    //             window.localStorage.setItem('global_result', global_result + 478);
+    //         }
+    //         else if(global_result === 3) {
+    //             window.localStorage.setItem('global_result', global_result + 597);
+    //         }
+    //         else if(global_result === 4) {
+    //             window.localStorage.setItem('global_result', global_result + 716);
+    //         }
+    
+    //         else{
+    //             window.localStorage.setItem('global_result', 770);
+    //         }
+            
+    
+    //         window.location.assign('./order.html');
+    //     });
+    
+    
+    //     $('.freq').on('click', () => {
+    //         const $checkedRadio = $(".freq:checked");
+    //         weeks_rez = $checkedRadio.val();
+    //         freq_text = $checkedRadio.attr('data-text');
+    //         discount = $checkedRadio.attr('data-discount');
+            
+    
+    //         recount();
+    //     });
+    
+    //     $('.dishes').on('click', () => {
+    //         const dishes = $(".dishes:checked");
+    //         dishes_rez = 0;
+    
+    //         for (var i = 0; i < dishes.length; i++) {
+    //             dishes_rez += +$(dishes[i]).val();
+    //         }
+    
+    //         recount();
+    //     });
+    // });
+    
+    
+    // var col =document.getElementById('discount');
+    
+    // col.addEventListener('click', () => {
+    //     col.classList.toggle('class');
+    // });
+    
+                        
+
     
                         // info
 

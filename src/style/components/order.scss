@@ -66,31 +66,36 @@
         &__blockblocks{
             display: flex;
             justify-content: space-between;
-            .block{
-                padding: 0 82px;
-                width: 270px;
-                height: 116px;
-                box-shadow: 0 8px 15px rgba(23, 117, 236, 0.15);
-                border-radius: 8px;
-                border: 1px solid #d7e4f3;
-                background-color: #ffffff;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                p{
-                    font-size: 16px;
-                    font-weight: 400;
-                    text-align: center;
+            label{
+                input{
+                    display: none;
                 }
-            }
-            .block:hover{
-                background-color: $bordercolor;
-                p {color: $white;
+                .block{
+                    padding: 0 82px;
+                    width: 270px;
+                    height: 116px;
+                    box-shadow: 0 8px 15px rgba(23, 117, 236, 0.15);
+                    border-radius: 8px;
+                    border: 1px solid #d7e4f3;
+                    background-color: #ffffff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    p{
+                        font-size: 16px;
+                        font-weight: 400;
+                        text-align: center;
+                    }
                 }
-            }
-            .activblock{
-                background-color: $bordercolor;
-                color: $white;
+                .block:hover{
+                    background-color: $bordercolor;
+                    p {color: $white;
+                    }
+                }
+                .activblock{
+                    background-color: $bordercolor;
+                    color: $white;
+                }
             }
         }
     }
@@ -140,19 +145,21 @@
                 padding-top: 16px;
             }
             &__text{
-                display: flex;
-                justify-content: space-between;
-                p{
-                    font-size: 14px;
-                    font-weight: 400;
-                    line-height: 30px;
-                    color: #8c8c8c;
-                }
-                span{
-                    font-size: 14px;
-                    font-weight: 400;
-                    line-height: 30px;
-                    color: #303030;
+                .bl{
+                    display: flex;
+                    justify-content: space-between;
+                    p{
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 30px;
+                        color: #8c8c8c;
+                    }
+                    span{
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 30px;
+                        color: #303030;
+                    }
                 }
             }
             .bord{
@@ -215,6 +222,9 @@
         flex-wrap: wrap;
         justify-content: space-between;
     }
+    input{
+        display: none;
+    }
     &__blockitem{
         width: 177px;
         height: 146px;
@@ -250,6 +260,10 @@
     &__text{
         text-align: center;
     }
+}
+
+.checkactive{
+    border: 1px solid $bordercolor;
 }
 
 .section_three{
@@ -308,6 +322,7 @@
                 border: 1px solid #d7e4f3;
                 background-color: $bordercolor;
                 margin-left: 14px;
+                transition: 0.2s;
                 span{
                     font-size: 18px;
                     font-weight: 400;
@@ -372,6 +387,7 @@
             border-radius: 8px;
             border: 1px solid #d7e4f3;
             background-color: $bordercolor;
+            transition: 0.2s;
             span{
                 font-size: 18px;
                 font-weight: 400;

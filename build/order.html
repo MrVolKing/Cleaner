@@ -7,20 +7,20 @@
     <meta content="" name="keywords">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta content="ie-edge" http-equiv="x-ua-compatible">
-    <link rel="stylesheet" href="./styles/app.min.css?2">
-    <script src="./scripts/app.js?2" defer></script><script src="./dist/js/jquery-3.2.1.min.js?2"></script> 
-<script type="text/javascript" src="./dist/js/slick.js?2"></script>
-<link rel="stylesheet" href="./dist/css/slick.css?2">
-<link rel="stylesheet" href="./dist/css/slick-theme.css?2">
-<link rel="stylesheet" href="./dist/css/swiper.css?2">
-<script src="./dist/js/swiper.min.js?2"></script>
-<link rel="stylesheet" href="./dist/css/photoswipe.css?2">
-<link rel="stylesheet" href="./dist/css/default-skin.css?2">
-<script src="./dist/js/photoswipe.min.js?2"></script>
-<script src="./dist/js/photoswipe-ui-default.min.js?2"></script> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.js?2"></script>
-<script src="./dist/js/masonry.pkgd.min.js?2"></script>
-<script src="./dist/js/main.js?2"></script> 
+    <link rel="stylesheet" href="./styles/app.min.css?3">
+    <script src="./scripts/app.js?3" defer></script><script src="./dist/js/jquery-3.2.1.min.js?3"></script> 
+<script type="text/javascript" src="./dist/js/slick.js?3"></script>
+<link rel="stylesheet" href="./dist/css/slick.css?3">
+<link rel="stylesheet" href="./dist/css/slick-theme.css?3">
+<link rel="stylesheet" href="./dist/css/swiper.css?3">
+<script src="./dist/js/swiper.min.js?3"></script>
+<link rel="stylesheet" href="./dist/css/photoswipe.css?3">
+<link rel="stylesheet" href="./dist/css/default-skin.css?3">
+<script src="./dist/js/photoswipe.min.js?3"></script>
+<script src="./dist/js/photoswipe-ui-default.min.js?3"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.js?3"></script>
+<script src="./dist/js/masonry.pkgd.min.js?3"></script>
+<script src="./dist/js/main.js?3"></script> 
   </head>
   <body>
     <form class="content">
@@ -81,15 +81,24 @@
                   <p>как часто необходимо убирать?</p>
                 </div>
                 <div class="block2__blockblocks">
-                  <div class="block" id="block3">
-                    <p>Раз в неделю - 20%</p>
-                  </div>
-                  <div class="block" id="block2">
-                    <p>Раз в две недели - 10%</p>
-                  </div>
-                  <div class="block" id="block1">
-                    <p>Один раз</p>
-                  </div>
+                  <label>
+                    <input class="freq" type="radio" name="freq" value="0.8" data-text="Раз в неделю" data-discount="20%" data-bold="fdfdf">
+                    <div class="block" id="block3">
+                      <p>Раз в неделю - 20%</p>
+                    </div>
+                  </label>
+                  <label>
+                    <input class="freq" type="radio" name="freq" value="0.9" data-text="Раз в две недели" data-discount="10%" data-bold="dfdfdf">
+                    <div class="block" id="block2">
+                      <p>Раз в две недели - 10%</p>
+                    </div>
+                  </label>
+                  <label>
+                    <input class="freq" type="radio" name="freq" value="1" data-text="Один раз" data-bold="sdsdsds" checked>
+                    <div class="block" id="block1">
+                      <p>Один раз</p>
+                    </div>
+                  </label>
                 </div>
               </div>
               <div class="block3">
@@ -119,22 +128,31 @@
                 </div>
                 <div class="top__blocktext">
                   <div class="top__text"> 
-                    <p>Дата уборки</p><span>Ср 26 Сен 09:00</span>
+                    <div class="bl"> 
+                      <p>Дата уборки</p><span>Ср 26 Сен 09:00</span>
+                    </div>
                   </div>
                   <div class="top__text"> 
-                    <p>Время уборки</p><span>~ 4 часа</span>
+                    <div class="bl">
+                      <p>Время уборки</p><span>~ 4 часа</span>
+                    </div>
                   </div>
                   <div class="top__text"> 
-                    <p>Регулярность</p><span>Один раз</span>
+                    <div class="bl"> 
+                      <p>Регулярность</p><span id="regulirity"> </span>
+                    </div>
                   </div>
                 </div>
                 <div class="top__text bord"> 
-                  <p>Стоимость первой уборки</p><span>499</span>
-                  <p>Раз в две недели </p><span>499</span>
+                  <div class="bl"> 
+                    <p>Стоимость первой уборки</p><span id="global_sum_result"></span>
+                  </div>
+                  <div class="bl">
+                    <p id="regulirity2"></p><span id="discount"></span>
+                  </div>
                 </div>
                 <div class="top__bottomtext"><span>К оплате</span>
-                  <p>
-                     499<span>грн.</span></p>
+                  <p id="global_sum_result2"></p>
                 </div>
                 <div class="top__link"> <a href="#">У меня есть промокод</a></div>
               </div>
@@ -163,60 +181,87 @@
               <p>Дополнительные опции:</p>
             </div>
             <div class="section_twoo__blockblocks">
-              <div class="section_twoo__blockitem">
-                <div class="section_twoo__img pos1"><img src="./images/dop1.png" alt=""></div>
-                <div class="section_twoo__text">
-                  <p>Холодильник</p>
+              <label>
+                <input class="dishes" type="checkbox" value="100" data-time="5">
+                <div class="section_twoo__blockitem" id="check1">
+                  <div class="section_twoo__img pos1"><img src="./images/dop1.png" alt=""></div>
+                  <div class="section_twoo__text">
+                    <p>Холодильник</p>
+                  </div>
                 </div>
-              </div>
-              <div class="section_twoo__blockitem">
-                <div class="section_twoo__img pos1"><img src="./images/dop2.png" alt=""></div>
-                <div class="section_twoo__text">
-                  <p>Духовка</p>
+              </label>
+              <label>
+                <input class="dishes" type="checkbox" value="100">
+                <div class="section_twoo__blockitem" id="check2">
+                  <div class="section_twoo__img pos1"><img src="./images/dop2.png" alt=""></div>
+                  <div class="section_twoo__text">
+                    <p>Духовка</p>
+                  </div>
                 </div>
-              </div>
-              <div class="section_twoo__blockitem">
-                <div class="section_twoo__img pos3"><img src="./images/dop3.png" alt=""></div>
-                <div class="section_twoo__text">
-                  <p>Внутри микроволновки</p>
+              </label>
+              <label>
+                <input class="dishes" type="checkbox" value="100">
+                <div class="section_twoo__blockitem" id="check3">
+                  <div class="section_twoo__img pos3"><img src="./images/dop3.png" alt=""></div>
+                  <div class="section_twoo__text">
+                    <p>Внутри микроволновки</p>
+                  </div>
                 </div>
-              </div>
-              <div class="section_twoo__blockitem">
-                <div class="section_twoo__img pos1"> <img src="./images/dop4.png" alt=""></div>
-                <div class="section_twoo__text">
-                  <p>Вытяжка</p>
+              </label>
+              <label>
+                <input class="dishes" type="checkbox" value="100" data-time="5">
+                <div class="section_twoo__blockitem" id="check4">
+                  <div class="section_twoo__img pos1"> <img src="./images/dop4.png" alt=""></div>
+                  <div class="section_twoo__text">
+                    <p>Вытяжка</p>
+                  </div>
                 </div>
-              </div>
-              <div class="section_twoo__blockitem">
-                <div class="section_twoo__img pos5"> <img src="./images/dop5.png" alt=""></div>
-                <div class="section_twoo__text">
-                  <p>Внутри кухонных шкафов</p>
+              </label>
+              <label>
+                <input class="dishes" type="checkbox" value="100">
+                <div class="section_twoo__blockitem" id="check5">
+                  <div class="section_twoo__img pos5"> <img src="./images/dop5.png" alt=""></div>
+                  <div class="section_twoo__text">
+                    <p>Внутри кухонных шкафов</p>
+                  </div>
                 </div>
-              </div>
-              <div class="section_twoo__blockitem">
-                <div class="section_twoo__img pos1"> <img src="./images/dop6.png" alt=""></div>
-                <div class="section_twoo__text">
-                  <p>Окна</p>
+              </label>
+              <label>
+                <input class="dishes" type="checkbox" value="100">
+                <div class="section_twoo__blockitem" id="check6">
+                  <div class="section_twoo__img pos1"> <img src="./images/dop6.png" alt=""></div>
+                  <div class="section_twoo__text">
+                    <p>Окна</p>
+                  </div>
                 </div>
-              </div>
-              <div class="section_twoo__blockitem">
-                <div class="section_twoo__img pos7">  <img src="./images/dop7.png" alt=""></div>
-                <div class="section_twoo__text">
-                  <p>Балкон</p>
+              </label>
+              <label>
+                <input class="dishes" type="checkbox" value="100" data-time="5">
+                <div class="section_twoo__blockitem" id="check7">
+                  <div class="section_twoo__img pos7">  <img src="./images/dop7.png" alt=""></div>
+                  <div class="section_twoo__text">
+                    <p>Балкон</p>
+                  </div>
                 </div>
-              </div>
-              <div class="section_twoo__blockitem">
-                <div class="section_twoo__img pos1"> <img src="./images/dop8.png" alt=""></div>
-                <div class="section_twoo__text">
-                  <p>Глажка</p>
+              </label>
+              <label>
+                <input class="dishes" type="checkbox" value="100">
+                <div class="section_twoo__blockitem" id="check8">
+                  <div class="section_twoo__img pos1"> <img src="./images/dop8.png" alt=""></div>
+                  <div class="section_twoo__text">
+                    <p>Глажка</p>
+                  </div>
                 </div>
-              </div>
-              <div class="section_twoo__blockitem">
-                <div class="section_twoo__img pos1"> <img src="./images/dop9.png" alt=""></div>
-                <div class="section_twoo__text">
-                  <p>Мытье посуды</p>
+              </label>
+              <label>
+                <input class="dishes" type="checkbox" value="100">
+                <div class="section_twoo__blockitem" id="check9">
+                  <div class="section_twoo__img pos1"> <img src="./images/dop9.png" alt=""></div>
+                  <div class="section_twoo__text">
+                    <p>Мытье посуды</p>
+                  </div>
                 </div>
-              </div>
+              </label>
             </div>
           </div>
         </div>
@@ -235,7 +280,7 @@
               <div class="card" id="card">
                 <div class="blockcard__inputblock">
                   <input type="text">
-                  <button><span>добавить карту</span></button>
+                  <button class="btnhover"><span>добавить карту</span></button>
                 </div>
                 <div class="blockcard__description">
                   <div class="blockcard__descriptionimg">
@@ -257,7 +302,7 @@
               </div>
             </div>
             <div class="blockbutton">
-              <button tupe="submit"><span>создать Заказ   </span></button>
+              <button class="btnhover" tupe="submit"><span>создать Заказ   </span></button>
             </div>
           </div>
         </div>
@@ -565,50 +610,174 @@
           <div class="popap-close" id="close"><a href="#close" title="close"><img src="./images/closed.png" alt=""></a></div>
         </div>
       </div>
-      <script>
-        var btn1 = document.getElementById('btn1');
-        var btn2 = document.getElementById('btn2');
-        var card = document.getElementById('card');
-        var nal = document.getElementById('nal');
-        var block1 = document.getElementById('block1');
-        var block2 = document.getElementById('block2');
-        var block3 = document.getElementById('block3');
-        
-        btn1.addEventListener('click', function () {
-            btn2.classList.add('noneactive');
-            btn1.classList.remove('noneactive');
-            nal.classList.add('disp');
-            card.classList.remove('disp');
-        });
-        
-        
-        btn2.addEventListener('click', function () {
-            btn1.classList.add('noneactive');
-            btn2.classList.remove('noneactive');
-            nal.classList.remove('disp');
-            card.classList.add('disp');
-        });
-        
-        block1.addEventListener('click', function () {
-            block1.classList.add('activblock');
-            block2.classList.remove('activblock');
-            block3.classList.remove('activblock');
-        });
-        
-        block2.addEventListener('click', function () {
-            block2.classList.add('activblock');
-            block1.classList.remove('activblock');
-            block3.classList.remove('activblock');
-            
-        });
-        
-        block3.addEventListener('click', function () {
-            block3.classList.add('activblock');
-            block2.classList.remove('activblock');
-            block1.classList.remove('activblock');
-            
-        });
-      </script>
     </form>
+    <script>
+      $(document).ready(() => {
+      
+          let global_result = window.localStorage.getItem('global_result') || 0; //undefined
+          let weeks_rez = 1;
+          let dishes_rez = 0;
+          let freq_text = 'Один раз';
+          let discount = '';
+          let bold = '';
+      
+          const $count_rooms_el = $('#count_rooms');
+          const $count_suns_el = $('#count_suns');
+      
+          const btn_step1 = $('#btn_step1');
+      
+          function recount(argument) {
+              $('#global_sum_result').html(global_result * weeks_rez + dishes_rez);
+              $('#global_sum_result2').html(global_result * weeks_rez + dishes_rez);
+              $('#regulirity').html(freq_text);
+              $('#regulirity2').html(freq_text);
+              $('#bold').html(bold);
+              if (discount) {
+                  $('#discount').show();
+                  $('#discount').html(discount);
+              }
+              else {
+                  $('#discount').hide();
+              }
+          }
+          recount();
+      
+      
+          btn_step1.on('click', () => {
+              const count_rooms_el_val = $count_rooms_el.val();
+              const count_suns_el_val = $count_suns_el.val();
+              global_result = +count_rooms_el_val + +count_suns_el_val;
+              if(global_result === 2) {
+                  window.localStorage.setItem('global_result', global_result + 478);
+              }
+              else if(global_result === 3) {
+                  window.localStorage.setItem('global_result', global_result + 597);
+              }
+              else if(global_result === 4) {
+                  window.localStorage.setItem('global_result', global_result + 716);
+              }
+      
+              else{
+                  window.localStorage.setItem('global_result', 770);
+              }
+              
+      
+              window.location.assign('./order.html');
+          });
+      
+      
+          $('.freq').on('click', () => {
+              const $checkedRadio = $(".freq:checked");
+              weeks_rez = $checkedRadio.val();
+              freq_text = $checkedRadio.attr('data-text');
+              discount = $checkedRadio.attr('data-discount');
+              bold = $checkedRadio.attr('data-bold');
+          
+      
+              recount();
+          });
+      
+          $('.dishes').on('click', () => {
+              const dishes = $(".dishes:checked");
+              dishes_rez = 0;
+      
+              for (var i = 0; i < dishes.length; i++) {
+                  dishes_rez += +$(dishes[i]).val();
+              }
+      
+              recount();
+          });
+      });
+      
+          var btn1 = document.getElementById('btn1');
+          var btn2 = document.getElementById('btn2');
+          var card = document.getElementById('card');
+          var nal = document.getElementById('nal');
+          var block1 = document.getElementById('block1');
+          var block2 = document.getElementById('block2');
+          var block3 = document.getElementById('block3');
+      
+          btn1.addEventListener('click', function () {
+              btn2.classList.add('noneactive');
+              btn1.classList.remove('noneactive');
+              nal.classList.add('disp');
+              card.classList.remove('disp');
+          });
+      
+      
+          btn2.addEventListener('click', function () {
+              btn1.classList.add('noneactive');
+              btn2.classList.remove('noneactive');
+              nal.classList.remove('disp');
+              card.classList.add('disp');
+          });
+      
+          block1.addEventListener('click', function () {
+              block1.classList.add('activblock');
+              block2.classList.remove('activblock');
+              block3.classList.remove('activblock');
+          });
+      
+          block2.addEventListener('click', function () {
+              block2.classList.add('activblock');
+              block1.classList.remove('activblock');
+              block3.classList.remove('activblock');
+              
+          });
+      
+          block3.addEventListener('click', function () {
+              block3.classList.add('activblock');
+              block2.classList.remove('activblock');
+              block1.classList.remove('activblock');
+              
+          });
+      
+      
+          var check1 = document.getElementById('check1');
+          var check2 = document.getElementById('check2');
+          var check3 = document.getElementById('check3');
+          var check4 = document.getElementById('check4');
+          var check5 = document.getElementById('check5');
+          var check6 = document.getElementById('check6');
+          var check7 = document.getElementById('check7');
+          var check8 = document.getElementById('check8');
+          var check9 = document.getElementById('check9');
+      
+           check1.addEventListener('click', function () {
+              check1.classList.toggle('checkactive');
+          });
+      
+          check2.addEventListener('click', function () {
+              check2.classList.toggle('checkactive');
+          });
+      
+          check3.addEventListener('click', function () {
+              check3.classList.toggle('checkactive');
+          });
+      
+          check4.addEventListener('click', function () {
+              check4.classList.toggle('checkactive');
+          });
+      
+          check5.addEventListener('click', function () {
+              check5.classList.toggle('checkactive');
+          });
+      
+          check6.addEventListener('click', function () {
+              check6.classList.toggle('checkactive');
+          });
+      
+          check7.addEventListener('click', function () {
+              check7.classList.toggle('checkactive');
+          });
+      
+          check8.addEventListener('click', function () {
+              check8.classList.toggle('checkactive');
+          });
+      
+          check9.addEventListener('click', function () {
+              check9.classList.toggle('checkactive');
+          });
+    </script>
   </body>
 </html>

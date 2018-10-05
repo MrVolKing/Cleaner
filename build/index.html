@@ -7,20 +7,20 @@
     <meta content="" name="keywords">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta content="ie-edge" http-equiv="x-ua-compatible">
-    <link rel="stylesheet" href="./styles/app.min.css?2">
-    <script src="./scripts/app.js?2" defer></script><script src="./dist/js/jquery-3.2.1.min.js?2"></script> 
-<script type="text/javascript" src="./dist/js/slick.js?2"></script>
-<link rel="stylesheet" href="./dist/css/slick.css?2">
-<link rel="stylesheet" href="./dist/css/slick-theme.css?2">
-<link rel="stylesheet" href="./dist/css/swiper.css?2">
-<script src="./dist/js/swiper.min.js?2"></script>
-<link rel="stylesheet" href="./dist/css/photoswipe.css?2">
-<link rel="stylesheet" href="./dist/css/default-skin.css?2">
-<script src="./dist/js/photoswipe.min.js?2"></script>
-<script src="./dist/js/photoswipe-ui-default.min.js?2"></script> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.js?2"></script>
-<script src="./dist/js/masonry.pkgd.min.js?2"></script>
-<script src="./dist/js/main.js?2"></script> 
+    <link rel="stylesheet" href="./styles/app.min.css?3">
+    <script src="./scripts/app.js?3" defer></script><script src="./dist/js/jquery-3.2.1.min.js?3"></script> 
+<script type="text/javascript" src="./dist/js/slick.js?3"></script>
+<link rel="stylesheet" href="./dist/css/slick.css?3">
+<link rel="stylesheet" href="./dist/css/slick-theme.css?3">
+<link rel="stylesheet" href="./dist/css/swiper.css?3">
+<script src="./dist/js/swiper.min.js?3"></script>
+<link rel="stylesheet" href="./dist/css/photoswipe.css?3">
+<link rel="stylesheet" href="./dist/css/default-skin.css?3">
+<script src="./dist/js/photoswipe.min.js?3"></script>
+<script src="./dist/js/photoswipe-ui-default.min.js?3"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.js?3"></script>
+<script src="./dist/js/masonry.pkgd.min.js?3"></script>
+<script src="./dist/js/main.js?3"></script> 
   </head>
   <body>
     <div class="content">
@@ -46,31 +46,34 @@
         <div class="wrapper">
           <div class="sectone">
             <div class="sectone__left">
-              <form class="form" form action="./order.html" method="get">
+              <form class="form">
                 <div class="form__title">
                   <p>Сервис регулярных уборок в Киеве</p>
                 </div>
                 <div class="form__input calc">
                   <div class="calc__quantity-block quantity-block">
-                    <button class="calc__quantity-arrow-plus quantity-arrow-plus" type="button"><span>+</span></button>
-                    <input class="calc__quantity-num quantity-num" type="text" value="1 - комната" readonly="readonly">
-                    <button class="quantity-arrow-minus arrow-minus" type="button"><span>-</span></button>
+                    <button class="calc__quantity-arrow-plus quantity-arrow-plus arrowinput" type="button"><span>+</span></button>
+                    <input class="calc__quantity-num quantity-num" id="count_rooms" type="text" value="1" readonly="readonly">
+                    <button class="quantity-arrow-minus arrow-minus arrowinput" type="button"><span>-</span></button>
+                    <div class="t">- санузел</div>
                   </div>
                 </div>
                 <div class="form__input calc">
                   <div class="calc__quantity-block quantity-block">
-                    <button class="calc__quantity-arrow-plus quantity-arrow-plus2" type="button"><span>+</span></button>
-                    <input class="calc__quantity-num quantity-num2" type="text" value="1 - санузел" readonly="readonly">
-                    <button class="quantity-arrow-minus2 arrow-minus" type="button"><span>-</span></button>
+                    <button class="calc__quantity-arrow-plus quantity-arrow-plus2 arrowinput" type="button"><span>+</span></button>
+                    <input class="calc__quantity-num quantity-num2" id="count_suns" type="text" value="1" readonly="readonly">
+                    <button class="quantity-arrow-minus2 arrow-minus arrowinput" type="button"><span>-</span></button>
+                    <div class="t">- комната</div>
                   </div>
                 </div>
                 <div class="form__input phone">
                   <input class="inputphonesfontsize" id="phone" type="tel" placeholder="(ХХХ) 222-22-22">
                   <div><span>+38</span></div>
                 </div>
+                <div id="selectvalid"></div>
                 <div class="form__button">
-                  <button href="./order.html"><span>узнать стоимость
-                      <!--(type="submit")--></span></button>
+                  <div class="btnform btnhover" id="btn_step1" tupe="button"><span>узнать стоимость
+                      <!--(type="submit")--></span></div>
                 </div>
               </form>
             </div>
@@ -139,7 +142,7 @@
             </div>
             <div class="sectthree__blockfoto"></div>
             <div class="sectthree__blockbutton">
-              <div id="requrepopap"><span>полный список ></span></div>
+              <div class="btnhover" id="requrepopap"><span>полный список ></span></div>
             </div>
           </div>
         </div>
@@ -574,20 +577,20 @@
             <div class="form__inputblock">
               <form class="form calc" form action="./order.html" method="get">
                 <div class="calc__quantity-block quantity-block">
-                  <button class="calc__quantity-arrow-plus quantity-arrow-plus wdht" type="button"><span>+</span></button>
+                  <button class="calc__quantity-arrow-plus quantity-arrow-plus wdht arrowinput" type="button"><span>+</span></button>
                   <input class="calc__quantity-num quantity-num" type="text" value="1 - комната" readonly="readonly">
-                  <button class="quantity-arrow-minus arrow-minus wdht" type="button"><span>-</span></button>
+                  <button class="quantity-arrow-minus arrow-minus wdht arrowinput" type="button"><span>-</span></button>
                 </div>
                 <div class="calc__quantity-block quantity-block">
-                  <button class="calc__quantity-arrow-plus quantity-arrow-plus2 wdht" type="button"><span>+</span></button>
+                  <button class="calc__quantity-arrow-plus quantity-arrow-plus2 wdht arrowinput" type="button"><span>+</span></button>
                   <input class="calc__quantity-num quantity-num2" type="text" value="1 - санузел" readonly="readonly">
-                  <button class="quantity-arrow-minus2 arrow-minus wdht" type="button"><span>-</span></button>
+                  <button class="quantity-arrow-minus2 arrow-minus wdht arrowinput" type="button"><span>-</span></button>
                 </div>
                 <div class="form__input phone">
                   <input class="inputphonesfontsize" id="phone2" type="tel" placeholder="(ХХХ) 222-22-22">
                   <div class="wdht"><span>+38</span></div>
                 </div>
-                <button class="buttonform" type="submit"><span>узнать стоимость</span></button>
+                <button class="buttonform btnhover" type="submit"><span>узнать стоимость</span></button>
               </form>
             </div>
           </div>
@@ -897,5 +900,83 @@
         </div>
       </div>
     </div>
+    <script>
+      $(document).ready(() => {
+      
+          let global_result = window.localStorage.getItem('global_result') || 0; //undefined
+          let weeks_rez = 1;
+          let dishes_rez = 0;
+          let freq_text = 'Один раз';
+          let discount = '';
+          let bold = '';
+      
+          const $count_rooms_el = $('#count_rooms');
+          const $count_suns_el = $('#count_suns');
+      
+          const btn_step1 = $('#btn_step1');
+      
+          function recount(argument) {
+              $('#global_sum_result').html(global_result * weeks_rez + dishes_rez);
+              $('#global_sum_result2').html(global_result * weeks_rez + dishes_rez);
+              $('#regulirity').html(freq_text);
+              $('#regulirity2').html(freq_text);
+              $('#bold').html(bold);
+              if (discount) {
+                  $('#discount').show();
+                  $('#discount').html(discount);
+              }
+              else {
+                  $('#discount').hide();
+              }
+          }
+          recount();
+      
+      
+          btn_step1.on('click', () => {
+              const count_rooms_el_val = $count_rooms_el.val();
+              const count_suns_el_val = $count_suns_el.val();
+              global_result = +count_rooms_el_val + +count_suns_el_val;
+              if(global_result === 2) {
+                  window.localStorage.setItem('global_result', global_result + 478);
+              }
+              else if(global_result === 3) {
+                  window.localStorage.setItem('global_result', global_result + 597);
+              }
+              else if(global_result === 4) {
+                  window.localStorage.setItem('global_result', global_result + 716);
+              }
+      
+              else{
+                  window.localStorage.setItem('global_result', 770);
+              }
+              
+      
+              window.location.assign('./order.html');
+          });
+      
+      
+          $('.freq').on('click', () => {
+              const $checkedRadio = $(".freq:checked");
+              weeks_rez = $checkedRadio.val();
+              freq_text = $checkedRadio.attr('data-text');
+              discount = $checkedRadio.attr('data-discount');
+              bold = $checkedRadio.attr('data-bold');
+          
+      
+              recount();
+          });
+      
+          $('.dishes').on('click', () => {
+              const dishes = $(".dishes:checked");
+              dishes_rez = 0;
+      
+              for (var i = 0; i < dishes.length; i++) {
+                  dishes_rez += +$(dishes[i]).val();
+              }
+      
+              recount();
+          });
+      });
+    </script>
   </body>
 </html>
