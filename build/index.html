@@ -7,20 +7,20 @@
     <meta content="" name="keywords">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta content="ie-edge" http-equiv="x-ua-compatible">
-    <link rel="stylesheet" href="./styles/app.min.css?3">
-    <script src="./scripts/app.js?3" defer></script><script src="./dist/js/jquery-3.2.1.min.js?3"></script> 
-<script type="text/javascript" src="./dist/js/slick.js?3"></script>
-<link rel="stylesheet" href="./dist/css/slick.css?3">
-<link rel="stylesheet" href="./dist/css/slick-theme.css?3">
-<link rel="stylesheet" href="./dist/css/swiper.css?3">
-<script src="./dist/js/swiper.min.js?3"></script>
-<link rel="stylesheet" href="./dist/css/photoswipe.css?3">
-<link rel="stylesheet" href="./dist/css/default-skin.css?3">
-<script src="./dist/js/photoswipe.min.js?3"></script>
-<script src="./dist/js/photoswipe-ui-default.min.js?3"></script> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.js?3"></script>
-<script src="./dist/js/masonry.pkgd.min.js?3"></script>
-<script src="./dist/js/main.js?3"></script> 
+    <link rel="stylesheet" href="./styles/app.min.css?5">
+    <script src="./scripts/app.js?5" defer></script><script src="./dist/js/jquery-3.2.1.min.js?5"></script> 
+<script type="text/javascript" src="./dist/js/slick.js?5"></script>
+<link rel="stylesheet" href="./dist/css/slick.css?5">
+<link rel="stylesheet" href="./dist/css/slick-theme.css?5">
+<link rel="stylesheet" href="./dist/css/swiper.css?5">
+<script src="./dist/js/swiper.min.js?5"></script>
+<link rel="stylesheet" href="./dist/css/photoswipe.css?5">
+<link rel="stylesheet" href="./dist/css/default-skin.css?5">
+<script src="./dist/js/photoswipe.min.js?5"></script>
+<script src="./dist/js/photoswipe-ui-default.min.js?5"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.js?5"></script>
+<script src="./dist/js/masonry.pkgd.min.js?5"></script>
+<script src="./dist/js/main.js?5"></script> 
   </head>
   <body>
     <div class="content">
@@ -28,16 +28,29 @@
         <div class="wrapper">
           <div class="header">
             <div class="header__left">
-              <div class="header__logo"><a href="./index.html">Профессиональная клиннинговая компания</a></div>
+              <div class="header__logo"><a href="./index.html"> 
+                  <svg width="49" height="49">
+                    <use xlink:href="./images/sprite/sprite.svg#logo-cleaner"></use>
+                  </svg></a></div>
             </div>
             <div class="header__right">
               <div class="menu">  
-                <div class="menu__paragraph menu__paragraph_color"><a href="#">услуги</a></div>
-                <div class="menu__paragraph menu__paragraph_color"><a href="#">о сервисе</a></div>
-                <div class="menu__paragraph menu__paragraph_color"><a href="#">вопросы</a></div>
-                <div class="menu__paragraph menu__paragraph_color"><a href="#">личный кабинет</a></div>
+                <div class="menu__paragraph menu__paragraph_color" id="requrepopap2"><a href="#">услуги</a></div>
+                <div class="menu__paragraph menu__paragraph_color" id="requrepopap3"><a href="#">о сервисе</a></div>
+                <div class="menu__paragraph menu__paragraph_color" id="requrepopap4"><a href="#">вопросы</a></div>
+                <div class="menu__paragraph menu__paragraph_color" id="requrepopap5"><a href="#">личный кабинет</a></div>
               </div>
-              <div class="number"><a class="number__1 number__1_color" href="tel:8805236565">8 800 523 65 65</a></div>
+              <div class="number"><a class="number__1 number__1_color" href="tel:+380674886845">+380 67 488 68 45</a></div>
+              <div class="btnadapt" id="btnadapt"> 
+                <svg class="svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px&quot;" viewBox="0 0 49 24" enable-background="new 0 0 49 24" xml:space="preserve">
+                  <path d="M1.1,3.5C0.5,3.5,0,3,0,2.4V1.7c0-0.6,0.5-1.1,1.1-1.1H47c0.6,0,1.1,0.5,1.1,1.1v0.7 c0,0.6-0.5,1.1-1.1,1.1H1.1z M1.1,13.8c-0.6,0-1.1-0.5-1.1-1.1V12c0-0.6,0.5-1.1,1.1-1.1H47c0.6,0,1.1,0.5,1.1,1.1v0.7 c0,0.6-0.5,1.1-1.1,1.1H1.1z M16.2,24c-0.6,0-1.1-0.5-1.1-1.1v-0.6c0-0.6,0.5-1.1,1.1-1.1H47c0.6,0,1.1,0.5,1.1,1.1v0.6 c0,0.6-0.5,1.1-1.1,1.1H16.2z"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="adaptmenu" id="adaptmenu">
+              <div class="adaptmenu__paragraph">
+                <div class="close" id="close"></div><a href="#">Услуги</a><a href="#">О сервисе</a><a href="#">Вопросы</a><a href="#">Личный кабинет</a>
+              </div>
             </div>
           </div>
         </div>
@@ -48,7 +61,7 @@
             <div class="sectone__left">
               <form class="form">
                 <div class="form__title">
-                  <p>Сервис регулярных уборок в Киеве</p>
+                  <p>Сервис регулярных уборок в Одессе</p>
                 </div>
                 <div class="form__input calc">
                   <div class="calc__quantity-block quantity-block">
@@ -118,7 +131,7 @@
                   <p>Оплата</p>
                 </div>
                 <div class="blockitem__text">
-                  <p>Банковской картой после окончания уборки</p>
+                  <p>Банковской картой или наличными после окончания уборки</p>
                 </div>
                 <div class="blockitem__icon"><img src="./images/secttwoo3.png" alt=""></div>
               </div>
@@ -135,10 +148,10 @@
               </div>
             </div>
             <div class="sectthree__navbar">
-              <div class="sectthree__navparagraph activ"><span>В КОМНАТЕ</span></div>
-              <div class="sectthree__navparagraph"><span>В КОридоре</span></div>
-              <div class="sectthree__navparagraph"><span>В Кухне</span></div>
-              <div class="sectthree__navparagraph"><span>В ванной</span></div>
+              <div class="sectthree__navparagraph activ" id="requrepopap16"><span>В КОМНАТЕ</span></div>
+              <div class="sectthree__navparagraph activhover" id="requrepopap17"><span>В КОридоре</span></div>
+              <div class="sectthree__navparagraph activhover" id="requrepopap18"><span>В Кухне</span></div>
+              <div class="sectthree__navparagraph activhover" id="requrepopap19"><span>В ванной</span></div>
             </div>
             <div class="sectthree__blockfoto"></div>
             <div class="sectthree__blockbutton">
@@ -163,7 +176,7 @@
                     <p>Удобное время</p>
                   </div>
                   <div class="blockitem__text">
-                    <p>Менеджер перезвонит и подтвердит уборку</p>
+                    <p>Вы сами выбираете время, удобное для уборки, с помощью сайта</p>
                   </div>
                   <div class="blockitem__bg">
                     <p>1</p>
@@ -175,7 +188,7 @@
                     <p>надежные исполнители</p>
                   </div>
                   <div class="blockitem__text">
-                    <p>Менеджер перезвонит и подтвердит уборку</p>
+                    <p>Мы тщательно отбираем и обучаем каждого клинера, и реагируем на ваши отзывы</p>
                   </div>
                   <div class="blockitem__bg">
                     <p>2</p>
@@ -187,7 +200,7 @@
                     <p>Система скидок</p>
                   </div>
                   <div class="blockitem__text">
-                    <p>Менеджер перезвонит и подтвердит уборку</p>
+                    <p>Расскажи друзьям о Cleaner или получи корпоративную скидку для сотрудников</p>
                   </div>
                   <div class="blockitem__bg">
                     <p>3</p>
@@ -199,7 +212,7 @@
                     <p>Страхуем на большую сумму</p>
                   </div>
                   <div class="blockitem__text">
-                    <p>Менеджер перезвонит и подтвердит уборку</p>
+                    <p>Если что-то пойдет не так, мы возместим ущерб из резервного фонда Cleaner!</p>
                   </div>
                   <div class="blockitem__bg">
                     <p>4</p>
@@ -232,8 +245,8 @@
                     <p>Милая и легкая в общении, исполнительная и старательная в работе. </p>
                   </div>
                   <div class="blockitem__star"><img src="./images/star5.png" alt=""></div>
-                  <div class="blockitem__blockbutton">
-                    <div><a href="#"><span>отзывы</span></a></div>
+                  <div class="blockitem__blockbutton" id="requrepopap6">
+                    <div><a href="javascript: void(0);"><span>отзывы</span></a></div>
                   </div>
                 </div>
               </div>
@@ -250,8 +263,8 @@
                     <p>Быстрая, трудолюбивая, стрессоустойчивая. Выполняет уборку шустро, но бережно. </p>
                   </div>
                   <div class="blockitem__star"><img src="./images/star5.png" alt=""></div>
-                  <div class="blockitem__blockbutton">
-                    <div><a href="#"><span>отзывы</span></a></div>
+                  <div class="blockitem__blockbutton" id="requrepopap7">
+                    <div><a href="javascript: void(0);"><span>отзывы</span></a></div>
                   </div>
                 </div>
               </div>
@@ -268,8 +281,8 @@
                     <p>Лариса по жизни очень активный и позитивный человек! Всегда с искренней улыбкой.</p>
                   </div>
                   <div class="blockitem__star"><img src="./images/star4.png" alt=""></div>
-                  <div class="blockitem__blockbutton">
-                    <div><a href="#"><span>отзывы</span></a></div>
+                  <div class="blockitem__blockbutton" id="requrepopap8">
+                    <div><a href="javascript: void(0);"><span>отзывы</span></a></div>
                   </div>
                 </div>
               </div>
@@ -286,8 +299,8 @@
                     <p>Милая и легкая в общении, исполнительная и старательная в работе. </p>
                   </div>
                   <div class="blockitem__star"><img src="./images/star5.png" alt=""></div>
-                  <div class="blockitem__blockbutton">
-                    <div><a href="#"><span>отзывы</span></a></div>
+                  <div class="blockitem__blockbutton" id="requrepopap9">
+                    <div><a href="javascript: void(0);"><span>отзывы</span></a></div>
                   </div>
                 </div>
               </div>
@@ -304,8 +317,8 @@
                     <p>Быстрая, трудолюбивая, стрессоустойчивая. Выполняет уборку шустро, но бережно. </p>
                   </div>
                   <div class="blockitem__star"><img src="./images/star5.png" alt=""></div>
-                  <div class="blockitem__blockbutton">
-                    <div><a href="#"><span>отзывы</span></a></div>
+                  <div class="blockitem__blockbutton" id="requrepopap10">
+                    <div><a href="javascript: void(0);"><span>отзывы</span></a></div>
                   </div>
                 </div>
               </div>
@@ -322,14 +335,14 @@
                     <p>Лариса по жизни очень активный и позитивный человек! Всегда с искренней улыбкой.</p>
                   </div>
                   <div class="blockitem__star"><img src="./images/star4.png" alt=""></div>
-                  <div class="blockitem__blockbutton">
-                    <div><a href="#"><span>отзывы</span></a></div>
+                  <div class="blockitem__blockbutton" id="requrepopap11">
+                    <div><a href="javascript: void(0);"><span>отзывы</span></a></div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="sectfive__blockbutton">
-              <div><a href="#"><span>все клинеры ></span></a></div>
+            <div class="sectfive__blockbutton" id="requrepopap12">
+              <div><a href="javascript: void(0);"><span>все клинеры ></span></a></div>
             </div>
           </div>
         </div>
@@ -346,18 +359,18 @@
               <div class="itemblockwrap">
                 <div class="itemblock">
                   <div class="itemblock__title">
-                    <p>Двухкомнатная</p>
+                    <p>Однокомнатная</p>
                   </div>
                   <div class="itemblock__img"><img src="./images/six.png" alt=""></div>
                   <div class="itemblock__text">
-                    <p>Уборка двухкомнатной квартиры с 1 санузлом раз в неделю</p>
+                    <p>Уборка однокомнатной квартиры с 1 санузлом один раз</p>
                   </div>
                   <div class="itemblock__price">
                     <p>
-                       от <span>399 </span>грн</p>
+                       от <span>480 </span>грн</p>
                   </div>
                   <div class="itemblock__button">
-                    <div><a href="#"><span>Заказать</span></a></div>
+                    <div><a href="./order.html"><span>Заказать</span></a></div>
                   </div>
                 </div>
               </div>
@@ -368,32 +381,32 @@
                   </div>
                   <div class="itemblock__img"><img src="./images/six.png" alt=""></div>
                   <div class="itemblock__text">
-                    <p>Уборка двухкомнатной квартиры с 1 санузлом раз в неделю</p>
+                    <p>Уборка двухкомнатной квартиры с 1 санузлом один раз</p>
                   </div>
                   <div class="itemblock__price">
                     <p>
-                       от <span>479 </span>грн</p>
+                       от <span>600</span>грн</p>
                   </div>
                   <div class="itemblock__button">
-                    <div><a href="#"><span>Заказать</span></a></div>
+                    <div><a href="./order.html"><span>Заказать</span></a></div>
                   </div>
                 </div>
               </div>
               <div class="itemblockwrap">
                 <div class="itemblock">
                   <div class="itemblock__title">
-                    <p>Двухкомнатная</p>
+                    <p>Трехкомнатная</p>
                   </div>
                   <div class="itemblock__img"><img src="./images/six.png" alt=""></div>
                   <div class="itemblock__text">
-                    <p>Уборка двухкомнатной квартиры с 1 санузлом раз в неделю</p>
+                    <p>Уборка трехкомнатной квартиры с 1 санузлом один раз</p>
                   </div>
                   <div class="itemblock__price">
                     <p>
-                       от <span>559 </span>грн</p>
+                       от <span>720 </span>грн</p>
                   </div>
                   <div class="itemblock__button">
-                    <div><a href="#"><span>Заказать</span></a></div>
+                    <div><a href="./order.html"><span>Заказать</span></a></div>
                   </div>
                 </div>
               </div>
@@ -414,6 +427,7 @@
                 <div class="swiper-wrapper"> 
                   <div class="swiper-slide">
                     <div class="slid">
+                      <div class="swiper-pagination"></div>
                       <div class="slid__title">
                         <p>татьяна</p>
                       </div>
@@ -427,6 +441,7 @@
                   </div>
                   <div class="swiper-slide">
                     <div class="slid">
+                      <div class="swiper-pagination"></div>
                       <div class="slid__title">
                         <p>татьяна</p>
                       </div>
@@ -440,6 +455,7 @@
                   </div>
                   <div class="swiper-slide">
                     <div class="slid">
+                      <div class="swiper-pagination"></div>
                       <div class="slid__title">
                         <p>татьяна</p>
                       </div>
@@ -453,6 +469,7 @@
                   </div>
                   <div class="swiper-slide">
                     <div class="slid">
+                      <div class="swiper-pagination"></div>
                       <div class="slid__title">
                         <p>татьяна</p>
                       </div>
@@ -466,6 +483,7 @@
                   </div>
                   <div class="swiper-slide">
                     <div class="slid">
+                      <div class="swiper-pagination"></div>
                       <div class="slid__title">
                         <p>татьяна</p>
                       </div>
@@ -479,6 +497,7 @@
                   </div>
                   <div class="swiper-slide">
                     <div class="slid">
+                      <div class="swiper-pagination"></div>
                       <div class="slid__title">
                         <p>татьяна</p>
                       </div>
@@ -510,52 +529,52 @@
               <div class="itebblock">
                 <div class="itebblock__top" id="top1">
                   <div class="titlefaq">
-                    <p>Далеко-далеко за  рыбные тексты?</p>
+                    <p>Выполняете ли вы заказы в частных домах, коттеджах, таунхаусах и на дачах?</p>
                   </div>
                   <div class="arrow"><img src="./images/arrowdown.png" alt=""></div>
                 </div>
                 <div class="itebblock__bottom" id="bottom1">
                   <div class="textfaq">
-                    <p>Уборка квартиры или дома отнимает у вас много сил и времени? Тогда этот вопрос можно решить вместе с нами. Наши специалисты знают все об идеальной чистоте, используют профессиональный инвентарь, умеют обращаться с бытовой химией, внимательно и аккуратно выполняют свою работу. </p>
+                    <p>Список услуг нашей клининговой компании включает не только уборку частных квартир. Чтобы привести в порядок, например, вашу дачу, к вам приедут сразу несколько клинеров с инвентарём и запасом чистящих средств. Бригадир выяснит у вас особенности дома, поставит задачу команде и проследит за её работой. Звоните нам по номеру +380 67 488 68 45</p>
                   </div>
                 </div>
               </div>
               <div class="itebblock">
                 <div class="itebblock__top" id="top2">
                   <div class="titlefaq">
-                    <p>Далеко-далеко за  рыбные тексты?</p>
+                    <p>Вы уже делаете уборку квартир в Одессе. Когда появитесь в других городах?</p>
                   </div>
                   <div class="arrow"><img src="./images/arrowdown.png" alt=""></div>
                 </div>
                 <div class="itebblock__bottom" id="bottom2">
                   <div class="textfaq">
-                    <p>Уборка квартиры или дома отнимает у вас много сил и времени? Тогда этот вопрос можно решить вместе с нами. Наши специалисты знают все об идеальной чистоте, используют профессиональный инвентарь, умеют обращаться с бытовой химией, внимательно и аккуратно выполняют свою работу. </p>
+                    <p>Цель, к которой наша клининговая компания постепенно идёт, — оказывать свои услуги на том же высоком уровне и в других регионах. Но, чтобы отладить все тонкости и не увеличивать расценки на уборку квартир, нам потребуется некоторое время.</p>
                   </div>
                 </div>
               </div>
               <div class="itebblock">
                 <div class="itebblock__top" id="top3">
                   <div class="titlefaq">
-                    <p>Далеко-далеко за  рыбные тексты?</p>
+                    <p>Могу ли я заказать уборку квартиры и уйти по делам, когда приедет клинер?</p>
                   </div>
                   <div class="arrow"><img src="./images/arrowdown.png" alt=""></div>
                 </div>
                 <div class="itebblock__bottom" id="bottom3">
                   <div class="textfaq">
-                    <p>Уборка квартиры или дома отнимает у вас много сил и времени? Тогда этот вопрос можно решить вместе с нами. Наши специалисты знают все об идеальной чистоте, используют профессиональный инвентарь, умеют обращаться с бытовой химией, внимательно и аккуратно выполняют свою работу. </p>
+                    <p>Спокойно оставляйте клинера наводить чистоту и отправляйтесь по делам. Добавьте дополнительные опции по забору и доставке ключей — клинер приедет, куда скажете, заберёт у вас ключи и потом привезёт их обратно. К цене уборки квартиры в этом случае добавится небольшая сумма.</p>
                   </div>
                 </div>
               </div>
               <div class="itebblock">
                 <div class="itebblock__top" id="top4">
                   <div class="titlefaq">
-                    <p>Далеко-далеко за  рыбные тексты?</p>
+                    <p>Вы сможете помыть потолки, жалюзи и всё, до чего сложно дотянуться?</p>
                   </div>
                   <div class="arrow"><img src="./images/arrowdown.png" alt=""></div>
                 </div>
                 <div class="itebblock__bottom" id="bottom4">
                   <div class="textfaq">
-                    <p>Уборка квартиры или дома отнимает у вас много сил и времени? Тогда этот вопрос можно решить вместе с нами. Наши специалисты знают все об идеальной чистоте, используют профессиональный инвентарь, умеют обращаться с бытовой химией, внимательно и аккуратно выполняют свою работу. </p>
+                    <p>Уборка квартир в Москве — и других крупных городах — означает, что грязь дома регулярно приходится вычищать из труднодоступных мест. Приготовьте стремянку, и мы протрём доступные вертикальные и горизонтальные поверхности даже на высоте. Потолки, жалюзи и стены мы не моем — в рюкзак клинера не поместится нужный инвентарь.</p>
                   </div>
                 </div>
               </div>
@@ -634,7 +653,7 @@
           </div>
         </div>
       </footer>
-      <div class="popapwrapblock" id="openmodal">
+      <div class="popapwrapblock" id="openmodal1">
         <div class="popap">
           <div class="popaptop">
             <div class="popapwrapper">
@@ -896,7 +915,15 @@
               </div>
             </div>
           </div>
-          <div class="popap-close" id="close"><a href="#close" title="close"><img src="./images/closed.png" alt=""></a></div>
+          <div class="popap-close" id="close1"><a href="#close" title="close"><img src="./images/closed.png" alt=""></a></div>
+        </div>
+      </div>
+      <div class="popapwrapblock" id="openmodal2">
+        <div class="popap posit">
+          <div class="popapwrapper">
+            <div class="contentpopap2"><span>Данная страница находится в разработке</span></div>
+          </div>
+          <div class="popap-close" id="close2"><a href="#close" title="close"><img src="./images/closed.png" alt=""></a></div>
         </div>
       </div>
     </div>
@@ -918,15 +945,23 @@
           function recount(argument) {
               $('#global_sum_result').html(global_result * weeks_rez + dishes_rez);
               $('#global_sum_result2').html(global_result * weeks_rez + dishes_rez);
+              $('#global_sum_result3').html(global_result * weeks_rez + dishes_rez);
+              $('#global_sum_result4').html(global_result * weeks_rez + dishes_rez);
+              $('#global_sum_result5').html(global_result * weeks_rez + dishes_rez);
               $('#regulirity').html(freq_text);
               $('#regulirity2').html(freq_text);
+              $('#regulirity3').html(freq_text);
+              $('#regulirity4').html(freq_text);
               $('#bold').html(bold);
               if (discount) {
                   $('#discount').show();
+                  $('#discount2').show();
                   $('#discount').html(discount);
+                  $('#discount2').html(discount);
               }
               else {
                   $('#discount').hide();
+                  $('#discount2').hide();
               }
           }
           recount();

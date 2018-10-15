@@ -10,22 +10,41 @@ block content
             .wrapper
                 .header
                     .header__left
-                        .header__logo
-                            a(href="./index.html") Профессиональная клиннинговая компания
+                        .header__logo.orderlogo
+                            a(href="./index.html") 
+                                svg(width="49" height="49")
+                                    use(xlink:href="./images/sprite/sprite.svg#logo-cleaner")
                     .header__right
                         .menu   
-                            .menu__paragraph
+                            .menu__paragraph#requrepopap9
                                 a(href="#") услуги
-                            .menu__paragraph
+                            .menu__paragraph#requrepopap10
                                 a(href="#") о сервисе
-                            .menu__paragraph
+                            .menu__paragraph#requrepopap11
                                 a(href="#") вопросы
-                            .menu__paragraph
+                            .menu__paragraph#requrepopap12
                                 a(href="#") личный кабинет
                         .number
                             a.number__1(href="tel:8805236565") 8 800 523 65 65
                             //- a.number__2(href="#") Заказать обратный звонок
+
+                        .btnadapt.btnadapt_col#btnadapt 
+                            svg.svg.svg2(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px"', viewBox='0 0 49 24', enable-background='new 0 0 49 24', xml:space='preserve')
+                                path(d='M1.1,3.5C0.5,3.5,0,3,0,2.4V1.7c0-0.6,0.5-1.1,1.1-1.1H47c0.6,0,1.1,0.5,1.1,1.1v0.7 c0,0.6-0.5,1.1-1.1,1.1H1.1z M1.1,13.8c-0.6,0-1.1-0.5-1.1-1.1V12c0-0.6,0.5-1.1,1.1-1.1H47c0.6,0,1.1,0.5,1.1,1.1v0.7 c0,0.6-0.5,1.1-1.1,1.1H1.1z M16.2,24c-0.6,0-1.1-0.5-1.1-1.1v-0.6c0-0.6,0.5-1.1,1.1-1.1H47c0.6,0,1.1,0.5,1.1,1.1v0.6 c0,0.6-0.5,1.1-1.1,1.1H16.2z')
         
+                    .adaptmenu#adaptmenu
+                        .adaptmenu__paragraph
+                            .close#close
+                            a(href="./index.html") Главная
+                            a(href="./projects.html") Проекты
+                            a(href="./materials.html") Из чего мы строим
+                            a(href="./services.html") Наши услуги 
+                            a(href="./price.html") Цены
+                            a(href="./about.html") О нас
+                            a(href="./gallery.html") Фото
+                            a(href="./contacts.html") Контакты
+                            a(href="./info.html") Блог
+
         section.onepadding
             .wrapper
                 .section_one
@@ -83,7 +102,7 @@ block content
                                     input(type="text" placeholder="Дом*" required)
                                 .block3__apartment
                                     input(type="text" placeholder="Квартира*" required)
-                    .section_one__right
+                    .section_one__right.adapthidden
                         .top#aside1
                             .top__title
                                 p Уборка квартиры с 1 жилой и 1 ванной комнатами
@@ -263,7 +282,10 @@ block content
                                 .blockcard__descriptiontext
                                     p За сутки до уборки на Вашем счету будет заблокирована полная стоимость заказа. В этот момент Вы можете получить SMS о том, что сумма списана так как у большинства банков нет специального уведомления о блокировке средств. На самом деле средства списываются только после уборки.
                         .nal.disp#nal
-                            span Приготовьте сумму к оплате 876 грн.
+                            p
+                                | Приготовьте сумму к оплате
+                                span#global_sum_result3 876
+                                | грн.
                     .blockcomment
                         .title
                             p коментарий к заказу:
@@ -271,8 +293,51 @@ block content
                             textarea(type="text" placeholder="Ваш комментарий")
                     .blockbutton
                         button.btnhover(tupe="submit")
-                            span создать Заказ   
-        
+                            span создать Заказ  
+
+        .section_one__right.adaptvisibl
+            .wrapper
+                .top#aside1
+                    .top__title
+                        p Уборка квартиры с 1 жилой и 1 ванной комнатами
+                    .top__blocktext
+                        .top__text 
+                            .bl 
+                                p Дата уборки
+                                span Ср 26 Сен 09:00
+                        .top__text  
+                            .bl
+                                p Время уборки
+                                span ~ 4 часа
+                        .top__text 
+                            .bl 
+                                p Регулярность
+                                span#regulirity3 
+                    .top__text.bord 
+                        .bl 
+                            p Стоимость первой уборки
+                            span#global_sum_result4
+                        .bl
+                            p#regulirity4
+                            span#discount2
+                    .top__bottomtext
+                        span К оплате
+                        p#global_sum_result5
+                            //- | 499
+                            //- span грн.
+                                
+                    .top__link  
+                        a(href="#") У меня есть промокод
+
+                .bottom
+                    .bottom__title
+                        p Как это работает
+                    .bottom__text
+                        p Клинер приезжает в оговоренное время с полным набором необходимых материалов и химии, Вас просим подготовить только пылесос.
+                    .bottom__title
+                        p Как оплатить
+                    .bottom__text
+                        p Банковской картой, которую можно изменить в Личном Кабинете. Оплата будет списана только после ухода исполнителя.
 
 
 
@@ -300,15 +365,23 @@ block content
             function recount(argument) {
                 $('#global_sum_result').html(global_result * weeks_rez + dishes_rez);
                 $('#global_sum_result2').html(global_result * weeks_rez + dishes_rez);
+                $('#global_sum_result3').html(global_result * weeks_rez + dishes_rez);
+                $('#global_sum_result4').html(global_result * weeks_rez + dishes_rez);
+                $('#global_sum_result5').html(global_result * weeks_rez + dishes_rez);
                 $('#regulirity').html(freq_text);
                 $('#regulirity2').html(freq_text);
+                $('#regulirity3').html(freq_text);
+                $('#regulirity4').html(freq_text);
                 $('#bold').html(bold);
                 if (discount) {
                     $('#discount').show();
+                    $('#discount2').show();
                     $('#discount').html(discount);
+                    $('#discount2').html(discount);
                 }
                 else {
                     $('#discount').hide();
+                    $('#discount2').hide();
                 }
             }
             recount();

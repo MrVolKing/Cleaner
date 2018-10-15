@@ -2,15 +2,134 @@
             // popap
 
     var btn = document.getElementById('requrepopap');
-    var openmodal = document.getElementById('openmodal');
-    var close = document.getElementById('close');
+    var openmodal1 = document.getElementById('openmodal1');  
+    var close1 = document.getElementById('close1');
+    var close2 = document.getElementById('close2');
+    // var close3 = document.getElementById('close3');
+    var requrepopap2 = document.getElementById('requrepopap2');
+    var requrepopap3 = document.getElementById('requrepopap3');
+    var requrepopap4 = document.getElementById('requrepopap4');
+    var requrepopap5 = document.getElementById('requrepopap5');
+    var requrepopap6 = document.getElementById('requrepopap6');
+    var requrepopap7 = document.getElementById('requrepopap7');
+    var requrepopap8 = document.getElementById('requrepopap8');
+    var requrepopap9 = document.getElementById('requrepopap9');
+    var requrepopap10 = document.getElementById('requrepopap10');
+    var requrepopap11 = document.getElementById('requrepopap11');
+    var requrepopap12 = document.getElementById('requrepopap12');
+    // var requrepopap13 = document.getElementById('requrepopap13');
+    // var requrepopap14 = document.getElementById('requrepopap14');
+    // var requrepopap15 = document.getElementById('requrepopap15');
+    var requrepopap16 = document.getElementById('requrepopap16');
+    var requrepopap17 = document.getElementById('requrepopap17');
+    var requrepopap18 = document.getElementById('requrepopap18');
+    var requrepopap19 = document.getElementById('requrepopap19');
+    // var requrepopap20 = document.getElementById('requrepopap20');
+    // var requrepopap21 = document.getElementById('requrepopap21');
+    // var requrepopap22 = document.getElementById('requrepopap22');
+    // var requrepopap23 = document.getElementById('requrepopap23');
+    var openmodal2 = document.getElementById('openmodal2');
+
+
 
     btn.addEventListener('click', function () {
-        openmodal.classList.add('modalDialogActive');
+        openmodal1.classList.add('modalDialogActive');
     });
 
-    close.addEventListener('click', function () {
-        openmodal.classList.remove('modalDialogActive');
+    close1.addEventListener('click', function () {
+        openmodal1.classList.remove('modalDialogActive');
+    });
+
+    requrepopap2.addEventListener('click', function () {
+        openmodal2.classList.add('modalDialogActive');
+    });
+
+    requrepopap3.addEventListener('click', function () {
+        openmodal2.classList.add('modalDialogActive');
+    });
+
+    requrepopap4.addEventListener('click', function () {
+        openmodal2.classList.add('modalDialogActive');
+    });
+
+    requrepopap5.addEventListener('click', function () {
+        openmodal2.classList.add('modalDialogActive');
+    });
+
+    requrepopap6.addEventListener('click', function () {
+        openmodal2.classList.add('modalDialogActive');
+    });
+
+    requrepopap7.addEventListener('click', function () {
+        openmodal2.classList.add('modalDialogActive');
+    });
+
+    requrepopap8.addEventListener('click', function () {
+        openmodal2.classList.add('modalDialogActive');
+    });
+
+    requrepopap9.addEventListener('click', function () {
+        openmodal2.classList.add('modalDialogActive');
+    });
+
+    requrepopap10.addEventListener('click', function () {
+        openmodal2.classList.add('modalDialogActive');
+    });
+
+    requrepopap11.addEventListener('click', function () {
+        openmodal2.classList.add('modalDialogActive');
+    });
+
+    requrepopap12.addEventListener('click', function () {
+        openmodal2.classList.add('modalDialogActive');
+    });
+
+    // requrepopap13.addEventListener('click', function () {
+    //     openmodal2.classList.add('modalDialogActive');
+    // });
+
+    // requrepopap14.addEventListener('click', function () {
+    //     openmodal2.classList.add('modalDialogActive');
+    // });
+
+    // requrepopap15.addEventListener('click', function () {
+    //     openmodal2.classList.add('modalDialogActive');
+    // });
+
+    requrepopap16.addEventListener('click', function () {
+        openmodal2.classList.add('modalDialogActive');
+    });
+
+    requrepopap17.addEventListener('click', function () {
+        openmodal2.classList.add('modalDialogActive');
+    });
+
+    requrepopap18.addEventListener('click', function () {
+        openmodal2.classList.add('modalDialogActive');
+    });
+
+    requrepopap19.addEventListener('click', function () {
+        openmodal2.classList.add('modalDialogActive');
+    });
+
+    // requrepopap20.addEventListener('click', function () {
+    //     openmodal2.classList.add('modalDialogActive');
+    // });
+
+    // requrepopap21.addEventListener('click', function () {
+    //     openmodal2.classList.add('modalDialogActive');
+    // });
+
+    // requrepopap22.addEventListener('click', function () {
+    //     openmodal2.classList.add('modalDialogActive');
+    // });
+
+    // requrepopap23.addEventListener('click', function () {
+    //     openmodal2.classList.add('modalDialogActive');
+    // });
+
+    close2.addEventListener('click', function () {
+        openmodal2.classList.remove('modalDialogActive');
     });
 
 
@@ -19,6 +138,7 @@
         $('html, body').scrollTop( screen );
         ;
       });
+
     
 
 

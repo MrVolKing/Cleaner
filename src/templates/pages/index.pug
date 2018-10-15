@@ -11,20 +11,34 @@ block content
                 .header
                     .header__left
                         .header__logo
-                            a(href="./index.html") Профессиональная клиннинговая компания
+                            a(href="./index.html") 
+                                svg(width="49" height="49")
+                                    use(xlink:href="./images/sprite/sprite.svg#logo-cleaner")
                     .header__right
                         .menu   
-                            .menu__paragraph.menu__paragraph_color
+                            .menu__paragraph.menu__paragraph_color#requrepopap2
                                 a(href="#") услуги
-                            .menu__paragraph.menu__paragraph_color
+                            .menu__paragraph.menu__paragraph_color#requrepopap3
                                 a(href="#") о сервисе
-                            .menu__paragraph.menu__paragraph_color
+                            .menu__paragraph.menu__paragraph_color#requrepopap4
                                 a(href="#") вопросы
-                            .menu__paragraph.menu__paragraph_color
+                            .menu__paragraph.menu__paragraph_color#requrepopap5
                                 a(href="#") личный кабинет
                         .number
-                            a.number__1.number__1_color(href="tel:8805236565") 8 800 523 65 65
+                            a.number__1.number__1_color(href="tel:+380674886845") +380 67 488 68 45
                             //- a.number__2.number__2_color(href="#") Заказать обратный звонок
+                        .btnadapt#btnadapt 
+                            svg.svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px"', viewBox='0 0 49 24', enable-background='new 0 0 49 24', xml:space='preserve')
+                                path(d='M1.1,3.5C0.5,3.5,0,3,0,2.4V1.7c0-0.6,0.5-1.1,1.1-1.1H47c0.6,0,1.1,0.5,1.1,1.1v0.7 c0,0.6-0.5,1.1-1.1,1.1H1.1z M1.1,13.8c-0.6,0-1.1-0.5-1.1-1.1V12c0-0.6,0.5-1.1,1.1-1.1H47c0.6,0,1.1,0.5,1.1,1.1v0.7 c0,0.6-0.5,1.1-1.1,1.1H1.1z M16.2,24c-0.6,0-1.1-0.5-1.1-1.1v-0.6c0-0.6,0.5-1.1,1.1-1.1H47c0.6,0,1.1,0.5,1.1,1.1v0.6 c0,0.6-0.5,1.1-1.1,1.1H16.2z')
+
+                    .adaptmenu#adaptmenu
+                        .adaptmenu__paragraph
+                            .close#close
+                            a(href="#") Услуги
+                            a(href="#") О сервисе
+                            a(href="#") Вопросы
+                            a(href="#") Личный кабинет
+                            
 
         section.onecontent
             .wrapper
@@ -32,7 +46,7 @@ block content
                     .sectone__left
                         form.form
                             .form__title
-                                p Сервис регулярных уборок в Киеве
+                                p Сервис регулярных уборок в Одессе
                             .form__input.calc
                                 .calc__quantity-block.quantity-block
                                     button.calc__quantity-arrow-plus.quantity-arrow-plus.arrowinput(type="button")
@@ -89,7 +103,7 @@ block content
                             .blockitem__title
                                 p Оплата
                             .blockitem__text
-                                p Банковской картой после окончания уборки
+                                p Банковской картой или наличными после окончания уборки
                             .blockitem__icon
                                 img(src="./images/secttwoo3.png", alt="")  
                     
@@ -100,13 +114,17 @@ block content
                         .maintitle
                             p Что входит в уборку?  
                     .sectthree__navbar
-                        .sectthree__navparagraph.activ
+                        .sectthree__navparagraph.activ#requrepopap16
+                            
                             span В КОМНАТЕ
-                        .sectthree__navparagraph
+                        .sectthree__navparagraph.activhover#requrepopap17
+                           
                             span В КОридоре
-                        .sectthree__navparagraph
+                        .sectthree__navparagraph.activhover#requrepopap18
+                            
                             span В Кухне
-                        .sectthree__navparagraph
+                        .sectthree__navparagraph.activhover#requrepopap19
+                            
                             span В ванной
                     .sectthree__blockfoto
                         //- img(src="./images/sectthree.png", alt="")
@@ -128,7 +146,7 @@ block content
                                 .blockitem__title
                                     p Удобное время
                                 .blockitem__text
-                                    p Менеджер перезвонит и подтвердит уборку
+                                    p Вы сами выбираете время, удобное для уборки, с помощью сайта
                                 .blockitem__bg
                                     p 1
                             .blockitem 
@@ -137,7 +155,7 @@ block content
                                 .blockitem__title.blockitem__title_mrg
                                     p надежные исполнители
                                 .blockitem__text
-                                    p Менеджер перезвонит и подтвердит уборку
+                                    p Мы тщательно отбираем и обучаем каждого клинера, и реагируем на ваши отзывы
                                 .blockitem__bg
                                     p 2
                             .blockitem 
@@ -146,7 +164,7 @@ block content
                                 .blockitem__title
                                     p Система скидок
                                 .blockitem__text
-                                    p Менеджер перезвонит и подтвердит уборку
+                                    p Расскажи друзьям о Cleaner или получи корпоративную скидку для сотрудников
                                 .blockitem__bg
                                     p 3
                             .blockitem 
@@ -155,7 +173,7 @@ block content
                                 .blockitem__title.blockitem__title_mrg
                                     p Страхуем на большую сумму
                                 .blockitem__text
-                                    p Менеджер перезвонит и подтвердит уборку
+                                    p Если что-то пойдет не так, мы возместим ущерб из резервного фонда Cleaner!
                                 .blockitem__bg
                                     p 4
 
@@ -178,9 +196,9 @@ block content
                                     p Милая и легкая в общении, исполнительная и старательная в работе. 
                                 .blockitem__star
                                     img(src="./images/star5.png", alt="")
-                                .blockitem__blockbutton
+                                .blockitem__blockbutton#requrepopap6
                                     div
-                                        a(href="#")
+                                        a(href="javascript: void(0);")
                                             span отзывы
                         .bloc
                             .blockitem
@@ -194,9 +212,9 @@ block content
                                     p Быстрая, трудолюбивая, стрессоустойчивая. Выполняет уборку шустро, но бережно. 
                                 .blockitem__star
                                     img(src="./images/star5.png", alt="")
-                                .blockitem__blockbutton
+                                .blockitem__blockbutton#requrepopap7
                                     div
-                                        a(href="#")
+                                        a(href="javascript: void(0);")
                                             span отзывы
                         .bloc
                             .blockitem
@@ -210,9 +228,9 @@ block content
                                     p Лариса по жизни очень активный и позитивный человек! Всегда с искренней улыбкой.
                                 .blockitem__star
                                     img(src="./images/star4.png", alt="")
-                                .blockitem__blockbutton
+                                .blockitem__blockbutton#requrepopap8
                                     div
-                                        a(href="#")
+                                        a(href="javascript: void(0);")
                                             span отзывы
                         .bloc
                             .blockitem
@@ -226,9 +244,9 @@ block content
                                     p Милая и легкая в общении, исполнительная и старательная в работе. 
                                 .blockitem__star
                                     img(src="./images/star5.png", alt="")
-                                .blockitem__blockbutton
+                                .blockitem__blockbutton#requrepopap9
                                     div
-                                        a(href="#")
+                                        a(href="javascript: void(0);")
                                             span отзывы
                         .bloc
                             .blockitem
@@ -242,9 +260,9 @@ block content
                                     p Быстрая, трудолюбивая, стрессоустойчивая. Выполняет уборку шустро, но бережно. 
                                 .blockitem__star
                                     img(src="./images/star5.png", alt="")
-                                .blockitem__blockbutton
+                                .blockitem__blockbutton#requrepopap10
                                     div
-                                        a(href="#")
+                                        a(href="javascript: void(0);")
                                             span отзывы
                         .bloc
                             .blockitem
@@ -258,14 +276,14 @@ block content
                                     p Лариса по жизни очень активный и позитивный человек! Всегда с искренней улыбкой.
                                 .blockitem__star
                                     img(src="./images/star4.png", alt="")
-                                .blockitem__blockbutton
+                                .blockitem__blockbutton#requrepopap11
                                     div
-                                        a(href="#")
+                                        a(href="javascript: void(0);")
                                             span отзывы
 
-                    .sectfive__blockbutton
+                    .sectfive__blockbutton#requrepopap12
                         div
-                            a(href="#")
+                            a(href="javascript: void(0);")
                                 span все клинеры >
                 
         section.sixcontent
@@ -278,20 +296,20 @@ block content
                         .itemblockwrap
                             .itemblock
                                 .itemblock__title
-                                    p Двухкомнатная
+                                    p Однокомнатная
                                 .itemblock__img
                                     img(src="./images/six.png", alt="")
                                 .itemblock__text
-                                    p Уборка двухкомнатной квартиры с 1 санузлом раз в неделю
+                                    p Уборка однокомнатной квартиры с 1 санузлом один раз
                                 .itemblock__price
                                     p 
                                         | от 
                                         span
-                                            | 399 
+                                            | 480 
                                         | грн
                                 .itemblock__button
                                     div
-                                        a(href="#")
+                                        a(href="./order.html")
                                             span Заказать
                         .itemblockwrap
                             .itemblock
@@ -300,34 +318,34 @@ block content
                                 .itemblock__img
                                     img(src="./images/six.png", alt="")
                                 .itemblock__text
-                                    p Уборка двухкомнатной квартиры с 1 санузлом раз в неделю
+                                    p Уборка двухкомнатной квартиры с 1 санузлом один раз
                                 .itemblock__price
                                     p 
                                         | от 
                                         span
-                                            | 479 
+                                            | 600
                                         | грн
                                 .itemblock__button
                                     div
-                                        a(href="#")
+                                        a(href="./order.html")
                                             span Заказать
                         .itemblockwrap
                             .itemblock
                                 .itemblock__title
-                                    p Двухкомнатная
+                                    p Трехкомнатная
                                 .itemblock__img
                                     img(src="./images/six.png", alt="")
                                 .itemblock__text
-                                    p Уборка двухкомнатной квартиры с 1 санузлом раз в неделю
+                                    p Уборка трехкомнатной квартиры с 1 санузлом один раз
                                 .itemblock__price
                                     p 
                                         | от 
                                         span
-                                            | 559 
+                                            | 720 
                                         | грн
                                 .itemblock__button
                                     div
-                                        a(href="#")
+                                        a(href="./order.html")
                                             span Заказать
         section.sevencontent
             .wrapper
@@ -340,6 +358,7 @@ block content
                             .swiper-wrapper 
                                 .swiper-slide
                                     .slid
+                                        .swiper-pagination
                                         .slid__title
                                             p татьяна
                                         .slid__date
@@ -348,6 +367,7 @@ block content
                                             p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. 
                                 .swiper-slide
                                     .slid
+                                        .swiper-pagination
                                         .slid__title
                                             p татьяна
                                         .slid__date
@@ -356,6 +376,7 @@ block content
                                             p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. 
                                 .swiper-slide
                                     .slid
+                                        .swiper-pagination
                                         .slid__title
                                             p татьяна
                                         .slid__date
@@ -364,6 +385,7 @@ block content
                                             p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. 
                                 .swiper-slide
                                     .slid
+                                        .swiper-pagination
                                         .slid__title
                                             p татьяна
                                         .slid__date
@@ -372,6 +394,7 @@ block content
                                             p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. 
                                 .swiper-slide
                                     .slid
+                                        .swiper-pagination
                                         .slid__title
                                             p татьяна
                                         .slid__date
@@ -380,6 +403,7 @@ block content
                                             p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. 
                                 .swiper-slide
                                     .slid
+                                        .swiper-pagination
                                         .slid__title
                                             p татьяна
                                         .slid__date
@@ -387,7 +411,7 @@ block content
                                         .slid__text
                                             p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. 
 
-
+                            
                             .swiper-button-next
                             .swiper-button-prev
 
@@ -401,39 +425,39 @@ block content
                         .itebblock
                             .itebblock__top#top1
                                 .titlefaq
-                                    p Далеко-далеко за  рыбные тексты?
+                                    p Выполняете ли вы заказы в частных домах, коттеджах, таунхаусах и на дачах?
                                 .arrow
                                     img(src="./images/arrowdown.png", alt="")
                             .itebblock__bottom#bottom1
                                 .textfaq
-                                    p Уборка квартиры или дома отнимает у вас много сил и времени? Тогда этот вопрос можно решить вместе с нами. Наши специалисты знают все об идеальной чистоте, используют профессиональный инвентарь, умеют обращаться с бытовой химией, внимательно и аккуратно выполняют свою работу. 
+                                    p Список услуг нашей клининговой компании включает не только уборку частных квартир. Чтобы привести в порядок, например, вашу дачу, к вам приедут сразу несколько клинеров с инвентарём и запасом чистящих средств. Бригадир выяснит у вас особенности дома, поставит задачу команде и проследит за её работой. Звоните нам по номеру +380 67 488 68 45
                         .itebblock
                             .itebblock__top#top2
                                 .titlefaq
-                                    p Далеко-далеко за  рыбные тексты?
+                                    p Вы уже делаете уборку квартир в Одессе. Когда появитесь в других городах?
                                 .arrow
                                     img(src="./images/arrowdown.png", alt="")
                             .itebblock__bottom#bottom2
                                 .textfaq
-                                    p Уборка квартиры или дома отнимает у вас много сил и времени? Тогда этот вопрос можно решить вместе с нами. Наши специалисты знают все об идеальной чистоте, используют профессиональный инвентарь, умеют обращаться с бытовой химией, внимательно и аккуратно выполняют свою работу. 
+                                    p Цель, к которой наша клининговая компания постепенно идёт, — оказывать свои услуги на том же высоком уровне и в других регионах. Но, чтобы отладить все тонкости и не увеличивать расценки на уборку квартир, нам потребуется некоторое время.
                         .itebblock
                             .itebblock__top#top3
                                 .titlefaq
-                                    p Далеко-далеко за  рыбные тексты?
+                                    p Могу ли я заказать уборку квартиры и уйти по делам, когда приедет клинер?
                                 .arrow
                                     img(src="./images/arrowdown.png", alt="")
                             .itebblock__bottom#bottom3
                                 .textfaq
-                                    p Уборка квартиры или дома отнимает у вас много сил и времени? Тогда этот вопрос можно решить вместе с нами. Наши специалисты знают все об идеальной чистоте, используют профессиональный инвентарь, умеют обращаться с бытовой химией, внимательно и аккуратно выполняют свою работу. 
+                                    p Спокойно оставляйте клинера наводить чистоту и отправляйтесь по делам. Добавьте дополнительные опции по забору и доставке ключей — клинер приедет, куда скажете, заберёт у вас ключи и потом привезёт их обратно. К цене уборки квартиры в этом случае добавится небольшая сумма.
                         .itebblock
                             .itebblock__top#top4
                                 .titlefaq
-                                    p Далеко-далеко за  рыбные тексты?
+                                    p Вы сможете помыть потолки, жалюзи и всё, до чего сложно дотянуться?
                                 .arrow
                                     img(src="./images/arrowdown.png", alt="")
                             .itebblock__bottom#bottom4
                                 .textfaq
-                                    p Уборка квартиры или дома отнимает у вас много сил и времени? Тогда этот вопрос можно решить вместе с нами. Наши специалисты знают все об идеальной чистоте, используют профессиональный инвентарь, умеют обращаться с бытовой химией, внимательно и аккуратно выполняют свою работу. 
+                                    p Уборка квартир в Москве — и других крупных городах — означает, что грязь дома регулярно приходится вычищать из труднодоступных мест. Приготовьте стремянку, и мы протрём доступные вертикальные и горизонтальные поверхности даже на высоте. Потолки, жалюзи и стены мы не моем — в рюкзак клинера не поместится нужный инвентарь.
 
         section.ninecontent
             .wrapper
@@ -501,15 +525,23 @@ block content
             function recount(argument) {
                 $('#global_sum_result').html(global_result * weeks_rez + dishes_rez);
                 $('#global_sum_result2').html(global_result * weeks_rez + dishes_rez);
+                $('#global_sum_result3').html(global_result * weeks_rez + dishes_rez);
+                $('#global_sum_result4').html(global_result * weeks_rez + dishes_rez);
+                $('#global_sum_result5').html(global_result * weeks_rez + dishes_rez);
                 $('#regulirity').html(freq_text);
                 $('#regulirity2').html(freq_text);
+                $('#regulirity3').html(freq_text);
+                $('#regulirity4').html(freq_text);
                 $('#bold').html(bold);
                 if (discount) {
                     $('#discount').show();
+                    $('#discount2').show();
                     $('#discount').html(discount);
+                    $('#discount2').html(discount);
                 }
                 else {
                     $('#discount').hide();
+                    $('#discount2').hide();
                 }
             }
             recount();

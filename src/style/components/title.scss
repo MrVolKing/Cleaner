@@ -28,3 +28,16 @@
         }
     }
 }
+
+@media all and (max-width: 500px) {
+    .title{
+        P{
+            font-size: 18px; 
+        }
+    }
+    .maintitle{
+        p{
+            font-size: 30px;
+        }
+    }
+}

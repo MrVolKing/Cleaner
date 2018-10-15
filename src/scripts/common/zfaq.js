@@ -14,20 +14,44 @@
         top1.addEventListener('click', function () {
             bottom1.classList.toggle('faqvisible');
             top1.classList.toggle('shadownone');
+            top2.classList.remove('shadownone');
+            top3.classList.remove('shadownone');
+            top4.classList.remove('shadownone');
+            bottom2.classList.remove('faqvisible');
+            bottom3.classList.remove('faqvisible');
+            bottom4.classList.remove('faqvisible');
         });
 
         top2.addEventListener('click', function () {
             bottom2.classList.toggle('faqvisible');
             top2.classList.toggle('shadownone');
+            top1.classList.remove('shadownone');
+            top3.classList.remove('shadownone');
+            top4.classList.remove('shadownone');
+            bottom1.classList.remove('faqvisible');
+            bottom3.classList.remove('faqvisible');
+            bottom4.classList.remove('faqvisible');
         });
 
         top3.addEventListener('click', function () {
             bottom3.classList.toggle('faqvisible');
             top3.classList.toggle('shadownone');
+            top2.classList.remove('shadownone');
+            top1.classList.remove('shadownone');
+            top4.classList.remove('shadownone');
+            bottom2.classList.remove('faqvisible');
+            bottom1.classList.remove('faqvisible');
+            bottom4.classList.remove('faqvisible');
         });
 
         top4.addEventListener('click', function () {
             bottom4.classList.toggle('faqvisible');
             top4.classList.toggle('shadownone');
+            top2.classList.remove('shadownone');
+            top3.classList.remove('shadownone');
+            top1.classList.remove('shadownone');
+            bottom2.classList.remove('faqvisible');
+            bottom3.classList.remove('faqvisible');
+            bottom1.classList.remove('faqvisible');
         });
 }

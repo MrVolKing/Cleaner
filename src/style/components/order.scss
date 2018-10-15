@@ -280,9 +280,14 @@
         border-bottom: 5px solid $bordercolor;
         padding-bottom: 44px;
         .nal{
-            span{
+            p{
                 font-size: 26px;
-                font-weight: 800;
+                font-weight: 700;
+                span{
+                    font-size: 26px;
+                    font-weight: 800; 
+                    margin: 0 10px;
+                }
             }
         }
         .buttoncheck{
@@ -395,5 +400,151 @@
                 color: $white;
             }
         }
+    }
+}
+
+.adaptvisibl{
+    display: none !important;
+}
+
+
+@media all and (max-width: 1250px){
+    .section_one{
+        .top{
+            position: inherit;
+        }
+        .bottom{
+            position: inherit;
+            margin-top: 0;
+        }
+        &__right{
+            width: auto;
+        }
+        .block1, .block2, .block3{
+            width: 60vw;
+            &__blockform{
+                flex-wrap: wrap;
+                justify-content: space-around;
+                input{
+                    margin-bottom: 20px;
+                }
+            }
+            &__blocinput{
+                flex-wrap: wrap;
+                .block2__day{
+                    margin-bottom: 20px;
+                }
+            }
+            &__blockblocks{
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+        }
+    }
+    .section_twoo__blockblocks{
+        justify-content: space-around;
+    }
+}
+
+@media all and (max-width: 769px){
+    .adapthidden{
+        display: none !important;
+    }
+    .adaptvisibl{
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        .wrapper{
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+        }
+        .top{
+            position: inherit;
+            width: 94vw;
+        }
+        .bottom{
+            padding: 20px 16px 0 16px;
+            margin-top: 20px;
+            position: inherit;
+            width: 94vw;
+            &__text{
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .section_one{
+        &__left{
+            width: 100%;
+            .block1, .block2, .block3{
+                width: 100%;
+                text-align: center;
+                &__blockform, &__blocinput, &__blockinputs{
+                    flex-direction: column;
+                    input{
+                        width: 90%;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .section_one .block2__blockblocks label .block{
+        width: 120px !important;
+        height: 80px;
+        padding: 0 6px;
+    }
+
+    .section_twoo__blockitem{
+        width: 130px;
+        height: 120px;
+        padding: 7px 12px 0 12px;
+        font-size: 14px;
+    }
+
+    .section_twoo{
+        width: 100%;
+        text-align: center;
+    }
+    .section_three{
+        width: 100%;
+        text-align: center;
+        padding: 37px 0 0 0;
+        .buttoncheck{
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: center;
+            &__but1{
+                margin-bottom: 16px;
+            }
+        }
+    }
+    .blockcard__inputblock{
+        flex-wrap: wrap;
+        justify-content: center;
+        input{
+            margin-bottom: 16px;
+        }
+    }
+    .blockcomment__input{
+        textarea{
+            width: 94% !important;
+        }
+    }
+    .blockcard__description{
+        flex-direction: column;
+        align-items: center;
+    }
+    .blockcard__descriptionimg{
+        margin-bottom: 10px;
+    }
+    
+}
+
+@media all and (max-width: 500px){
+    .section_one .block1__titlebig p{
+        font-size: 32px;
     }
 }

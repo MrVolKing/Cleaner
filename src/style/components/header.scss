@@ -30,6 +30,19 @@
             font-weight: 700;
             line-height: 18px;
             color: $maintext;
+            svg{
+                height: 100px;
+                width: 120px;
+                position: absolute;
+                left: 12px;
+                fill: $white;
+                top: -8px;
+            }
+        }
+    }
+    .orderlogo{
+        svg{
+            fill: $buttoncolor;
         }
     }
     &__right{
@@ -84,4 +97,95 @@
         }
     }
   
+}
+
+
+// adapt menu
+
+.adaptmenu{
+    transform: translateX(100%);
+    transition: 1s;
+    width: 55vw;
+    background-color: white;
+    height: 78vh;
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    right: 0;
+    &__paragraph{
+        justify-content: space-around;
+        height: 80%;
+        padding-right: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-top: 80px;
+        a{
+            text-decoration: none;
+            font-size: 16px;
+            color: $maintext;
+        }
+        .close{
+            background: url(../images/cancel.svg) center/100% no-repeat;
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            left: 10px;
+            top: 10px;
+        }
+    }
+}
+
+.visibladaptmenu{
+    transform: translateX(0%);
+    transition: 1s;
+}
+
+@media all and (max-width: 1250px){
+    .hoadercontent{
+        .wrapper{
+            padding: 0;
+        }
+        .header{
+            // &__left{
+            //     width: auto;
+            // }
+            .menu{
+                width: auto;
+                flex: 1;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 920px){
+    .header{
+        .number{
+            display: none;
+        }
+        .menu{
+            padding-left: 20px;
+        }
+    }
+}
+
+@media all and (max-width: 600px) {
+    .header{
+        .menu{
+            display: none;
+        }
+    }
+    .btnadapt{
+        padding-right: 20px;
+        display: block;
+        .svg{
+            width: 40px;
+            fill: $white;
+            height: 43px;
+        }
+        .svg2{
+            fill: black;
+        }
+    }
+
 }

@@ -10,6 +10,7 @@
     right: 0;
     bottom: 0;
     top: 0;
+    z-index: 100000000000;
 }
 
 
@@ -63,6 +64,25 @@
             font-size: 18px;
             font-weight: 800;
         }
+    }
+}
+.posit{
+    background-image: url(../images/bgpopap.png);
+    background-position-x: -1px;
+    position: fixed;
+    top: 40%;
+    margin: 0;
+    z-index: 1212121212121000000000;
+    width: 568px;
+    height: 202px;
+    box-shadow: 0 8px 15px rgba(23, 117, 236, 0.25);
+    border-radius: 15px;
+    border: 5px solid #04a2eb;
+    padding: 79px 109px 80px 238px;
+    span{
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 20px;
     }
 }
 
@@ -198,4 +218,103 @@
     top: -30px;
     z-index: 100000;
     right: -5px;
+}
+
+
+@media all and (max-width: 800px){
+    .popapwrapblock{
+        // display: flex;
+        .popap{
+            width: 94vw;
+            &__blocktitle{
+                text-align: center;
+            }
+            .block{
+                width: 100%;
+                flex-wrap: wrap;
+                justify-content: center;
+                &__left{
+                    width: 300px;
+                    .title{
+                        text-align: center;
+                    }
+                }
+                &__right{
+                    width: 300px;
+                    text-align: center;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+    .popapmidle{
+        padding: 16px;
+        .block2{
+            padding: 0;
+            text-align: center;
+        }
+        .blockimg{
+            position: inherit;
+        }
+        .blockbutton{
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .popapbottom{
+        .block3{
+            &__title{
+                text-align: center;
+            }
+            &__blockblocks{
+                flex-wrap: wrap;
+            }
+            &__left{
+                width: 100%;
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: center;
+            }
+            &__right{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        
+    }
+    .posit{
+        background-repeat: no-repeat;
+        padding: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 600px){
+    .popap{
+        .blockimg{
+            width: 81vw;
+            height: 62vw;
+            overflow: hidden;
+            margin-bottom: 16px;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 500px){
+    .popap{
+        &__titlebig{
+            p{
+                font-size: 26px;
+            }
+        }
+    }
 }
