@@ -14,7 +14,7 @@
         position: absolute;
         transform: translate(-50%, -50%);
         top: 49%;
-        left: 52%;
+        left: 54%;
         font-size: 18px;
     }
     padding: 193px 0 184px 0;
@@ -774,13 +774,20 @@
     .form{
         display: flex;
         justify-content: space-between;
+        .t{
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 39%;
+            left: 54%;
+            font-size: 14px;
+        }
         input{
             width: 270px;
             height: 64px;
             box-shadow: 0 8px 15px rgba(4, 162, 235, 0.25);
             border-radius: 8px;
             border: 1px solid #d7e4f3;
-            padding-left: 98px;
+            padding-left: 93px;
             
         }
         .buttonform{
@@ -825,10 +832,13 @@
     }
 }
 
-@media all and (max-width: 1470px){  
-    .onecontent{
-        background: none;
-        background-color: #4268a1;
+@media all and (max-width: 1400px){   
+    // .onecontent{
+    //     background: none;
+    //     background-color: rgba(66, 104, 161, 0.8);
+    // }
+    .sectone{
+        padding: 5px 0 184px 0;
     }
 }
 
@@ -846,6 +856,10 @@
 }
 
 @media all and (max-width: 1250px) {
+    .onecontent{
+        background: none;
+        background-color: rgba(66, 104, 161, 1);
+    }
     .sectone{
         flex-direction: column-reverse;
         align-items: center;
@@ -988,20 +1002,24 @@
 @media all and (max-width: 500px){
     .sectone{
         .form{
-            width: 94vw;
+            width: 88vw;
             &__title{
                 padding: 0 10px;
             }
             &__input{
                 input{
-                    width: 81vw;
-                    padding-left: 24vw;
+                    width: 76vw;
+                    padding-left: 21vw;
+                    font-size: 16px;
                 }
             }
             &__button{
                 .btnform{
-                    width: 81vw;
+                    width: 76vw;
                 }
+            }
+            .t{
+                font-size: 16px;
             }
         }
     }

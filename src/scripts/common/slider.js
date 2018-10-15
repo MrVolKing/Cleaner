@@ -1,4 +1,4 @@
-
+                                // slider
 {
     var swiper = new Swiper('.swiper-container', {
         loop: true,
@@ -22,6 +22,8 @@
       });
 }
 
+
+                    // adapt menu
 
 {
     

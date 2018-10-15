@@ -78,3 +78,15 @@
 .arrowinput:hover{
     background-color: rgba(2, 145, 210, 0.4);
 }
+
+
+@media all and (max-width: 500px){
+    // .calc{
+    //     &__quantity-arrow-plus{
+    //         height: 18vw;
+    //     }
+    //     .arrow-minus, .quantity-num{
+    //         height: 18vw;
+    //     }
+    // }
+}

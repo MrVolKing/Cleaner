@@ -56,7 +56,7 @@ block content
                                 p Как к вам обращаться:
                             .block1__blockform
                                 .block1__name
-                                    input(type="text" placeholder="Имя*" required)
+                                    input(type="text" placeholder="Имя*" required)#input1
                                 .block1__surname
                                     input(type="text" placeholder="Фамилия*" required)
                                 .block1__email
@@ -95,7 +95,7 @@ block content
                                 p Выберите адрес:
                             .block3__blockinputs
                                 .block3__sity
-                                    input(type="text" placeholder="Город / район*" required)
+                                    input(type="text" placeholder="Одесса" required)
                                 .block3__street
                                     input(type="text" placeholder="Улица*" required)
                                 .block3__hous
@@ -292,7 +292,7 @@ block content
                         .blockcomment__input
                             textarea(type="text" placeholder="Ваш комментарий")
                     .blockbutton
-                        button.btnhover(tupe="submit")
+                        button.btnhover(tupe="submit")#submit
                             span создать Заказ  
 
         .section_one__right.adaptvisibl
@@ -433,6 +433,7 @@ block content
             });
         });
 
+
             var btn1 = document.getElementById('btn1');
             var btn2 = document.getElementById('btn2');
             var card = document.getElementById('card');
@@ -487,7 +488,7 @@ block content
             var check8 = document.getElementById('check8');
             var check9 = document.getElementById('check9');
 
-             check1.addEventListener('click', function () {
+                check1.addEventListener('click', function () {
                 check1.classList.toggle('checkactive');
             });
 
@@ -522,3 +523,9 @@ block content
             check9.addEventListener('click', function () {
                 check9.classList.toggle('checkactive');
             });
+
+
+
+
+            
+      

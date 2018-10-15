@@ -7,20 +7,20 @@
     <meta content="" name="keywords">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta content="ie-edge" http-equiv="x-ua-compatible">
-    <link rel="stylesheet" href="./styles/app.min.css?5">
-    <script src="./scripts/app.js?5" defer></script><script src="./dist/js/jquery-3.2.1.min.js?5"></script> 
-<script type="text/javascript" src="./dist/js/slick.js?5"></script>
-<link rel="stylesheet" href="./dist/css/slick.css?5">
-<link rel="stylesheet" href="./dist/css/slick-theme.css?5">
-<link rel="stylesheet" href="./dist/css/swiper.css?5">
-<script src="./dist/js/swiper.min.js?5"></script>
-<link rel="stylesheet" href="./dist/css/photoswipe.css?5">
-<link rel="stylesheet" href="./dist/css/default-skin.css?5">
-<script src="./dist/js/photoswipe.min.js?5"></script>
-<script src="./dist/js/photoswipe-ui-default.min.js?5"></script> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.js?5"></script>
-<script src="./dist/js/masonry.pkgd.min.js?5"></script>
-<script src="./dist/js/main.js?5"></script> 
+    <link rel="stylesheet" href="./styles/app.min.css?6">
+    <script src="./scripts/app.js?6" defer></script><script src="./dist/js/jquery-3.2.1.min.js?6"></script> 
+<script type="text/javascript" src="./dist/js/slick.js?6"></script>
+<link rel="stylesheet" href="./dist/css/slick.css?6">
+<link rel="stylesheet" href="./dist/css/slick-theme.css?6">
+<link rel="stylesheet" href="./dist/css/swiper.css?6">
+<script src="./dist/js/swiper.min.js?6"></script>
+<link rel="stylesheet" href="./dist/css/photoswipe.css?6">
+<link rel="stylesheet" href="./dist/css/default-skin.css?6">
+<script src="./dist/js/photoswipe.min.js?6"></script>
+<script src="./dist/js/photoswipe-ui-default.min.js?6"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.js?6"></script>
+<script src="./dist/js/masonry.pkgd.min.js?6"></script>
+<script src="./dist/js/main.js?6"></script> 
   </head>
   <body>
     <form class="content">
@@ -68,7 +68,7 @@
                 </div>
                 <div class="block1__blockform">
                   <div class="block1__name">
-                    <input type="text" placeholder="Имя*" required>
+                    <input type="text" placeholder="Имя*" required id="input1">
                   </div>
                   <div class="block1__surname">
                     <input type="text" placeholder="Фамилия*" required>
@@ -120,7 +120,7 @@
                 </div>
                 <div class="block3__blockinputs">
                   <div class="block3__sity">
-                    <input type="text" placeholder="Город / район*" required>
+                    <input type="text" placeholder="Одесса" required>
                   </div>
                   <div class="block3__street">
                     <input type="text" placeholder="Улица*" required>
@@ -317,7 +317,7 @@
               </div>
             </div>
             <div class="blockbutton">
-              <button class="btnhover" tupe="submit"><span>создать Заказ  </span></button>
+              <button class="btnhover" tupe="submit" id="submit"><span>создать Заказ  </span></button>
             </div>
           </div>
         </div>
@@ -772,6 +772,7 @@
           });
       });
       
+      
           var btn1 = document.getElementById('btn1');
           var btn2 = document.getElementById('btn2');
           var card = document.getElementById('card');
@@ -826,7 +827,7 @@
           var check8 = document.getElementById('check8');
           var check9 = document.getElementById('check9');
       
-           check1.addEventListener('click', function () {
+              check1.addEventListener('click', function () {
               check1.classList.toggle('checkactive');
           });
       
@@ -861,6 +862,11 @@
           check9.addEventListener('click', function () {
               check9.classList.toggle('checkactive');
           });
+      
+      
+      
+      
+          
     </script>
   </body>
 </html>
