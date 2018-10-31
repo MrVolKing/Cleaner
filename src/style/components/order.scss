@@ -11,7 +11,7 @@
     }
     &__right{
         width: 23%;
-        padding-top: 77px;
+        padding-top: 0px;
     }
     .block1{
         padding-bottom: 23px;
@@ -249,6 +249,20 @@
         // align-items: center;
         // justify-content: center;
         padding: 30px 21px 0 21px;
+        position: relative;
+    }
+    .selectwindow{
+        position: relative;
+        .select{
+            position: absolute;
+            bottom: 10px;
+            transform: translateX(-50%);
+            left: 50%;
+            display: none;
+        }
+        .selecton{
+            display: block;
+        }
     }
     // &__blockitem:hover{
     //     border: 1px solid $bordercolor;
@@ -275,7 +289,7 @@
 
 .checkactive{
     border: 1px solid $bordercolor;
-    box-shadow: 0px 0px 21px 0px rgba(65,105,225,0.75);
+    box-shadow: 0px 0px 31px 10px rgba(65,105,225,0.75);
 }
 
 .section_three{

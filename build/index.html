@@ -7,20 +7,19 @@
     <meta content="" name="keywords">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta content="ie-edge" http-equiv="x-ua-compatible">
-    <link rel="stylesheet" href="./styles/app.min.css?6">
-    <script src="./scripts/app.js?6" defer></script><script src="./dist/js/jquery-3.2.1.min.js?6"></script> 
-<script type="text/javascript" src="./dist/js/slick.js?6"></script>
-<link rel="stylesheet" href="./dist/css/slick.css?6">
-<link rel="stylesheet" href="./dist/css/slick-theme.css?6">
-<link rel="stylesheet" href="./dist/css/swiper.css?6">
-<script src="./dist/js/swiper.min.js?6"></script>
-<link rel="stylesheet" href="./dist/css/photoswipe.css?6">
-<link rel="stylesheet" href="./dist/css/default-skin.css?6">
-<script src="./dist/js/photoswipe.min.js?6"></script>
-<script src="./dist/js/photoswipe-ui-default.min.js?6"></script> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.js?6"></script>
-<script src="./dist/js/masonry.pkgd.min.js?6"></script>
-<script src="./dist/js/main.js?6"></script> 
+    <link rel="stylesheet" href="./styles/app.min.css?1"><script src="./dist/js/jquery-3.2.1.min.js?1"></script> 
+<script type="text/javascript" src="./dist/js/slick.js?1"></script>
+<link rel="stylesheet" href="./dist/css/slick.css?1">
+<link rel="stylesheet" href="./dist/css/slick-theme.css?1">
+<link rel="stylesheet" href="./dist/css/swiper.css?1">
+<script src="./dist/js/swiper.min.js?1"></script>
+<link rel="stylesheet" href="./dist/css/photoswipe.css?1">
+<link rel="stylesheet" href="./dist/css/default-skin.css?1">
+<script src="./dist/js/photoswipe.min.js?1"></script>
+<script src="./dist/js/photoswipe-ui-default.min.js?1"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.js?1"></script>
+<script src="./dist/js/masonry.pkgd.min.js?1"></script>
+<script src="./dist/js/main.js?1"></script> 
   </head>
   <body>
     <div class="content">
@@ -928,92 +927,154 @@
           <div class="popap-close" id="close2"><a href="#close" title="close"><img src="./images/closed.png" alt=""></a></div>
         </div>
       </div>
+      <script>
+        $(document).ready(() => {
+        
+        let global_result = window.localStorage.getItem('global_result') || 0; //undefined
+        let weeks_rez = 1;
+        let dishes_rez = 0;
+        let select1_rez = 0;
+        let select2_rez = 0;
+        let select3_rez = 0;
+        let select4_rez = 0;
+        let freq_text = 'Один раз';
+        let discount = '';
+        let bold = '';
+        
+        const $count_rooms_el = $('#count_rooms');
+        const $count_suns_el = $('#count_suns');
+        
+        const $select1 = $('#selectmin1');
+        const $select2 = $('#selectmin2');
+        const $select3 = $('#selectmin3');
+        const $select4 = $('#selectmin4');
+        
+        const btn_step1 = $('#btn_step1');
+        
+        function recount(argument) {
+            $('#global_sum_result').html(global_result * weeks_rez + dishes_rez + select1_rez + select2_rez + select3_rez + select4_rez);
+            $('#global_sum_result2').html(global_result * weeks_rez + dishes_rez + select1_rez + select2_rez + select3_rez + select4_rez);
+            $('#global_sum_result3').html(global_result * weeks_rez + dishes_rez + select1_rez + select2_rez + select3_rez + select4_rez);
+            $('#global_sum_result4').html(global_result * weeks_rez + dishes_rez + select1_rez + select2_rez + select3_rez + select4_rez);
+            $('#global_sum_result5').html(global_result * weeks_rez + dishes_rez + select1_rez + select2_rez + select3_rez + select4_rez);
+            $('#regulirity').html(freq_text);
+            $('#regulirity2').html(freq_text);
+            $('#regulirity3').html(freq_text);
+            $('#regulirity4').html(freq_text);
+            $('#bold').html(bold);
+            if (discount) {
+                $('#discount').show();
+                $('#discount2').show();
+                $('#discount').html(discount);
+                $('#discount2').html(discount);
+            }
+            else {
+                $('#discount').hide();
+                $('#discount2').hide();
+            }
+        }
+        recount();
+        
+        
+        btn_step1.on('click', () => {
+            const count_rooms_el_val = $count_rooms_el.val();
+            const count_suns_el_val = $count_suns_el.val();
+            global_result = +count_rooms_el_val + +count_suns_el_val;
+            if(global_result === 2) {
+                window.localStorage.setItem('global_result', global_result + 478);
+            }
+            else if(global_result === 3) {
+                window.localStorage.setItem('global_result', global_result + 597);
+            }
+            else if(global_result === 4) {
+                window.localStorage.setItem('global_result', global_result + 716);
+            }
+        
+            else{
+                window.localStorage.setItem('global_result', 770);
+            }
+            
+        
+            window.location.assign('./order.html');
+        });
+        
+        
+        $('.freq').on('click', () => {
+            const $checkedRadio = $(".freq:checked");
+            weeks_rez = $checkedRadio.val();
+            freq_text = $checkedRadio.attr('data-text');
+            discount = $checkedRadio.attr('data-discount');
+            bold = $checkedRadio.attr('data-bold');
+        
+        
+            recount();
+        });
+        
+        $('.dishes').on('click', () => {
+            const dishes = $(".dishes:checked");
+            dishes_rez = 0;
+        
+            for (var i = 0; i < dishes.length; i++) {
+                dishes_rez += +$(dishes[i]).val();
+            }
+        
+            recount();
+        });
+        //- let = clicks = 0;
+        $('.select1').on('click', () => {
+            //- if (clicks === 0){
+            //-     select1_rez = $select1.val() * 50;
+            //-     recount();
+            //- } else{
+            //-     select1_rez = 0;
+            //-     recount();
+            //- }
+            //- clicks++;
+            select1_rez = $select1.val() * 50; 
+            recount();
+            
+        });
+        
+        //- $('.select1').on('click', () => {
+        //-     select1_rez = $select1.val() * 0;
+        //-     recount();
+        //- });
+        
+        
+        $('.select2').on('click', () => {
+            select2_rez = $select2.val() * 120;
+            recount();
+        });
+        
+        
+        
+        $('.select3').on('click', () => {
+            const select3_val = $select3.val();
+            if(select3_val === '1'){
+                select3_rez = 60;
+            } else if (select3_val === '2'){
+                select3_rez = 90;
+            } else {
+                select3_rez = 120;
+            }
+            
+            recount();
+        });
+        $('.select4').on('click', () => {
+            const select4_val = $select4.val();
+            if(select4_val === '1'){
+                select4_rez = 60;
+            } else if (select4_val === '2'){
+                select4_rez = 90;
+            } else {
+                select4_rez = 120;
+            }
+            recount();
+        });
+        
+        });
+      </script>
     </div>
-    <script>
-      $(document).ready(() => {
-      
-          let global_result = window.localStorage.getItem('global_result') || 0; //undefined
-          let weeks_rez = 1;
-          let dishes_rez = 0;
-          let freq_text = 'Один раз';
-          let discount = '';
-          let bold = '';
-      
-          const $count_rooms_el = $('#count_rooms');
-          const $count_suns_el = $('#count_suns');
-      
-          const btn_step1 = $('#btn_step1');
-      
-          function recount(argument) {
-              $('#global_sum_result').html(global_result * weeks_rez + dishes_rez);
-              $('#global_sum_result2').html(global_result * weeks_rez + dishes_rez);
-              $('#global_sum_result3').html(global_result * weeks_rez + dishes_rez);
-              $('#global_sum_result4').html(global_result * weeks_rez + dishes_rez);
-              $('#global_sum_result5').html(global_result * weeks_rez + dishes_rez);
-              $('#regulirity').html(freq_text);
-              $('#regulirity2').html(freq_text);
-              $('#regulirity3').html(freq_text);
-              $('#regulirity4').html(freq_text);
-              $('#bold').html(bold);
-              if (discount) {
-                  $('#discount').show();
-                  $('#discount2').show();
-                  $('#discount').html(discount);
-                  $('#discount2').html(discount);
-              }
-              else {
-                  $('#discount').hide();
-                  $('#discount2').hide();
-              }
-          }
-          recount();
-      
-      
-          btn_step1.on('click', () => {
-              const count_rooms_el_val = $count_rooms_el.val();
-              const count_suns_el_val = $count_suns_el.val();
-              global_result = +count_rooms_el_val + +count_suns_el_val;
-              if(global_result === 2) {
-                  window.localStorage.setItem('global_result', global_result + 478);
-              }
-              else if(global_result === 3) {
-                  window.localStorage.setItem('global_result', global_result + 597);
-              }
-              else if(global_result === 4) {
-                  window.localStorage.setItem('global_result', global_result + 716);
-              }
-      
-              else{
-                  window.localStorage.setItem('global_result', 770);
-              }
-              
-      
-              window.location.assign('./order.html');
-          });
-      
-      
-          $('.freq').on('click', () => {
-              const $checkedRadio = $(".freq:checked");
-              weeks_rez = $checkedRadio.val();
-              freq_text = $checkedRadio.attr('data-text');
-              discount = $checkedRadio.attr('data-discount');
-              bold = $checkedRadio.attr('data-bold');
-          
-      
-              recount();
-          });
-      
-          $('.dishes').on('click', () => {
-              const dishes = $(".dishes:checked");
-              dishes_rez = 0;
-      
-              for (var i = 0; i < dishes.length; i++) {
-                  dishes_rez += +$(dishes[i]).val();
-              }
-      
-              recount();
-          });
-      });
-    </script>
+    <script src="./scripts/app.js?6"></script>
   </body>
 </html>

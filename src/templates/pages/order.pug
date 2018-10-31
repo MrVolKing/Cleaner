@@ -232,33 +232,87 @@ block content
                                 .section_twoo__text
                                     p Внутри кухонных шкафов
                         label
-                            input(type="checkbox" value='100' class="dishes")
+                            //- input(type="checkbox" value='100' class="dishes")
                             .section_twoo__blockitem#check6
                                 .section_twoo__img.pos1  
                                     img(src="./images/dop6.png", alt="")
                                 .section_twoo__text
                                     p Окна
+                            .selectwindow
+                                select.select.select1#selectmin1
+                                    option(value="1") 1
+                                    option(value="2") 2
+                                    option(value="3") 3
+                                    option(value="4") 4
+                                    option(value="5") 5
+                                    option(value="6") 6
+                                    option(value="7") 7
+                                    option(value="8") 8
+                                    option(value="9") 9
+                                    option(value="10") 10
+                                    option(value="11") 11
+                                    option(value="12") 12
+                                    option(value="13") 13
+                                    option(value="14") 14
+                                    option(value="15") 15
+                                    option(value="16") 16
+                                    option(value="17") 17
+                                    option(value="18") 18
+                                    option(value="19") 19
+                                    option(value="20") 20
                         label
-                            input(type="checkbox" value='100' class="dishes" data-time="5")
+                            //- input(type="checkbox" value='100' class="dishes" data-time="5")
                             .section_twoo__blockitem#check7
                                 .section_twoo__img.pos7   
                                     img(src="./images/dop7.png", alt="")
                                 .section_twoo__text
                                     p Балкон
+                            .selectwindow
+                                select.select.select2#selectmin2
+                                    option(value="1") 1
+                                    option(value="2") 2
+                                    option(value="3") 3
+                                    option(value="4") 4
+                                    option(value="5") 5
+                                    option(value="6") 6
+                                    option(value="7") 7
+                                    option(value="8") 8
+                                    option(value="9") 9
+                                    option(value="10") 10
+                                    option(value="11") 11
+                                    option(value="12") 12
+                                    option(value="13") 13
+                                    option(value="14") 14
+                                    option(value="15") 15
+                                    option(value="16") 16
+                                    option(value="17") 17
+                                    option(value="18") 18
+                                    option(value="19") 19
+                                    option(value="20") 20
                         label
-                            input(type="checkbox" value='100' class="dishes")
+                            //- input(type="checkbox" value='100' class="dishes")
                             .section_twoo__blockitem#check8
                                 .section_twoo__img.pos1  
                                     img(src="./images/dop8.png", alt="")
                                 .section_twoo__text
                                     p Глажка
+                            .selectwindow
+                                select.select.select3#selectmin3
+                                    option(value="1") 30 минут
+                                    option(value="2") 45 минут
+                                    option(value="3") 60 минут
                         label
-                            input(type="checkbox" value='100' class="dishes")
+                            //- input(type="checkbox" value='100' class="dishes")
                             .section_twoo__blockitem#check9
                                 .section_twoo__img.pos1  
                                     img(src="./images/dop9.png", alt="")
                                 .section_twoo__text
                                     p Мытье посуды
+                            .selectwindow
+                                select.select.select4#selectmin4
+                                    option(value="1") 30 минут
+                                    option(value="2") 45 минут
+                                    option(value="3") 60 минут
 
         section
             .wrapper
@@ -346,92 +400,9 @@ block content
 
         include ../common/popap.pug
 
-
+        include ../common/script.pug
     script.
-        $(document).ready(() => {
-
-            let global_result = window.localStorage.getItem('global_result') || 0; //undefined
-            let weeks_rez = 1;
-            let dishes_rez = 0;
-            let freq_text = 'Один раз';
-            let discount = '';
-            let bold = '';
-
-            const $count_rooms_el = $('#count_rooms');
-            const $count_suns_el = $('#count_suns');
-
-            const btn_step1 = $('#btn_step1');
-
-            function recount(argument) {
-                $('#global_sum_result').html(global_result * weeks_rez + dishes_rez);
-                $('#global_sum_result2').html(global_result * weeks_rez + dishes_rez);
-                $('#global_sum_result3').html(global_result * weeks_rez + dishes_rez);
-                $('#global_sum_result4').html(global_result * weeks_rez + dishes_rez);
-                $('#global_sum_result5').html(global_result * weeks_rez + dishes_rez);
-                $('#regulirity').html(freq_text);
-                $('#regulirity2').html(freq_text);
-                $('#regulirity3').html(freq_text);
-                $('#regulirity4').html(freq_text);
-                $('#bold').html(bold);
-                if (discount) {
-                    $('#discount').show();
-                    $('#discount2').show();
-                    $('#discount').html(discount);
-                    $('#discount2').html(discount);
-                }
-                else {
-                    $('#discount').hide();
-                    $('#discount2').hide();
-                }
-            }
-            recount();
-
-
-            btn_step1.on('click', () => {
-                const count_rooms_el_val = $count_rooms_el.val();
-                const count_suns_el_val = $count_suns_el.val();
-                global_result = +count_rooms_el_val + +count_suns_el_val;
-                if(global_result === 2) {
-                    window.localStorage.setItem('global_result', global_result + 478);
-                }
-                else if(global_result === 3) {
-                    window.localStorage.setItem('global_result', global_result + 597);
-                }
-                else if(global_result === 4) {
-                    window.localStorage.setItem('global_result', global_result + 716);
-                }
-
-                else{
-                    window.localStorage.setItem('global_result', 770);
-                }
-                
-
-                window.location.assign('./order.html');
-            });
-
-
-            $('.freq').on('click', () => {
-                const $checkedRadio = $(".freq:checked");
-                weeks_rez = $checkedRadio.val();
-                freq_text = $checkedRadio.attr('data-text');
-                discount = $checkedRadio.attr('data-discount');
-                bold = $checkedRadio.attr('data-bold');
-            
-
-                recount();
-            });
-
-            $('.dishes').on('click', () => {
-                const dishes = $(".dishes:checked");
-                dishes_rez = 0;
-
-                for (var i = 0; i < dishes.length; i++) {
-                    dishes_rez += +$(dishes[i]).val();
-                }
-
-                recount();
-            });
-        });
+        
 
 
             var btn1 = document.getElementById('btn1');
@@ -487,6 +458,10 @@ block content
             var check7 = document.getElementById('check7');
             var check8 = document.getElementById('check8');
             var check9 = document.getElementById('check9');
+            var selectmin1 = document.getElementById('selectmin1');
+            var selectmin2 = document.getElementById('selectmin2');
+            var selectmin3 = document.getElementById('selectmin3');
+            var selectmin4 = document.getElementById('selectmin4');
 
                 check1.addEventListener('click', function () {
                 check1.classList.toggle('checkactive');
@@ -510,18 +485,22 @@ block content
 
             check6.addEventListener('click', function () {
                 check6.classList.toggle('checkactive');
+                selectmin1.classList.toggle('selecton');
             });
 
             check7.addEventListener('click', function () {
                 check7.classList.toggle('checkactive');
+                selectmin2.classList.toggle('selecton');
             });
 
             check8.addEventListener('click', function () {
                 check8.classList.toggle('checkactive');
+                selectmin3.classList.toggle('selecton');
             });
 
             check9.addEventListener('click', function () {
                 check9.classList.toggle('checkactive');
+                selectmin4.classList.toggle('selecton');
             });
 
 
